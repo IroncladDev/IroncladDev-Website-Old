@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+:root {
+  --b-bright: rgb(36, 93, 146);
+  --b-med: #152c42;
+  --b-dim: #121f33;
+
+  --gr-bright: #145a52;
+  --gr-med: #00433A;
+  --gr-dim: #062925;
+
+  --y-bright: #ffce45;
+  --y-med: #e6bc32;
+  --y-dim: #d4ac2b;
+
+  --w-5: #ffffff;
+  --w-4: #fafafa;
+  --w-3: #e6e6e6;
+  --w-2: #c8c8c8;
+  --w-1: #969696;
+
+  --g-bright: #646464;
+  --g-med: #4b4b4b;
+  --g-dim: #323232;
+
+  --font-text: "Nunito Sans", "Avenir", sans-serif;
+  --font-title: "Bebas Neue", "Arial Black", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-title);
+}
+h2{
+  font-size: 2em;
+}
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: overlay;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+p {
+  font-family: var(--font-text);
+  line-height: 30px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  font-weight: 300;
+  max-width: 700px;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+p > a{
+  color: var(--b-bright);
+  text-decoration: underline;
+}
+
+[href]:hover{
+  cursor: pointer;
+}
+
+textarea{
+  resize: vertical;
+}
+
+section {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+@media (max-width: 400px) {
+  p {
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gr-dim); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gr-med); 
+}
+.swal2-title{
+  font-family: var(--font-text);
+  font-weight: 400;
+  margin: 1px 0 !important;
+  font-size: 16px !important;
+}
+.swal2-html-container{
+  font-weight: 200;
+  margin: 1px 0 !important;
+  font-family: var(--font-text);
+  font-size: 13px !important;
+}

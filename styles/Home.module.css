@@ -1,0 +1,134 @@
+.sec1 {
+  width: 100vw;
+  height: 100vh;
+  background: var(--b-dim);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.header {
+  position: relative;
+  top: 50vh;
+  transform: translatey(-50%);
+  margin-left: 10vw;
+  max-width: 80vw;
+  display: flex;
+}
+.headBlock{
+  max-width: 40vw;
+  align-self: center;
+}
+.illustration{
+  width: 100%;
+  align-self: center;
+  max-height: 400px;
+}
+.iwrap{
+  flex-grow: 1;
+  opacity: 0;
+}
+.headDescription {
+  max-width: 400px;
+  width: 60vw;
+}
+.title {
+  color: var(--w-3);
+  font-size: 5em;
+  text-align: left;
+}
+.slant1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  max-height: 400px;
+  clip-path: polygon(100% 50%, 25% 100%, 100% 100%);
+  background: var(--w-5);
+}
+.slant2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--b-med);
+  clip-path: polygon(0 0, 100% 64%, 100% 0);
+}
+.slant3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  clip-path: polygon(0 0, 0 100%, 68% 0);
+}
+.slant4 {
+  background: var(--gr-med);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.slant6 {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+.slant7 {
+  clip-path: polygon(0 100%, 0 calc(100% - 100px), 100% 100%);
+  background: var(--w-5);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.slant8 {
+  clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+  background: var(--b-dim);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+.slant9 {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.abtCover {
+  z-index: 5;
+  width: 90%;
+  min-height: 30vh;
+  height: auto;
+  margin: 5%;
+}
+
+@media (max-width: 1000px) {
+  .headBlock {
+    max-width: 60vw;
+  }
+}
+@media(max-width: 800px){
+  .iwrap{
+    display: none;
+  }
+  .headBlock{
+    max-width: 80vw;
+  }
+}
+@media (max-width: 675px) {
+  .header {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 300 300" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <path style="fill: none; stroke: rgb(21, 91, 83); stroke-width: 5px;" d="M 151.688 2.101 L 20.926 79.353 C 20.926 79.353 20.235 216.914 20.461 216.914 C 20.687 216.914 148.807 298.355 148.807 298.355 L 280.2 221.303 L 279.804 73.476 L 151.688 2.101 Z"></path>
+  <ellipse style="stroke: rgb(20, 90, 82); stroke-width: 5px; fill: none;" cx="150" cy="150" rx="125" ry="125"></ellipse>
+  <path style="fill: none; stroke: rgb(20, 90, 82); stroke-width: 5px; stroke-linejoin: round; stroke-linecap: round;" d="M 163.408 38.986 L 114.997 141.208 L 152.935 162.084 L 126.463 257.36 L 179.642 152.076 L 145.855 131.36 L 163.408 38.986 Z"></path>
+</svg>

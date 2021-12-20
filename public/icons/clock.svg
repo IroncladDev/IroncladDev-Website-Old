@@ -1,0 +1,20 @@
+<svg viewBox="0 0 300 300" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <path style="fill: none; stroke: rgb(21, 91, 83); stroke-width: 5px;" d="M 151.688 2.101 L 20.926 79.353 C 20.926 79.353 17.741 216.687 17.967 216.687 C 18.193 216.687 148.807 298.355 148.807 298.355 L 280.2 221.303 L 279.804 73.476 L 151.688 2.101 Z"></path>
+  <path style="fill: none; stroke-width: 5px; stroke: rgb(20, 90, 82); stroke-linecap: round; stroke-linejoin: round;" d="M 150.628 29.084 L 150 150 L 218.963 106.578"></path>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, -6.281168, 110.853472)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 108.430404, 185.027667)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 226.348406, 118.763528)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 220.9926, -11.939276)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="151.347" cy="16.781" rx="5" ry="5"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 55.800867, -41.510525)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, -2.444524, 54.427458)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 51.100528, 150.843101)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 164.433162, 151.206151)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 222.290295, 54.890202)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="39.452" cy="93.342" rx="5" ry="5" transform="matrix(1, 0, 0, 1, 168.401734, -44.503876)"></ellipse>
+  <ellipse style="fill: rgb(20, 90, 82);" cx="150.251" cy="150.67" rx="9.307" ry="9.307"></ellipse>
+  <path style="fill: none; stroke: rgb(20, 90, 82); stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round;" d="M 142.154 82.871 C 142.154 82.871 150.827 29.689 151.054 29.915 C 151.281 30.141 158.096 82.402 158.096 82.402"></path>
+  <path style="fill: none; stroke: rgb(20, 90, 82); stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round;" d="M 127.13 50.958 C 127.13 50.958 150.253 47.148 150.48 47.374 C 150.707 47.6 135.584 67.285 135.584 67.285" transform="matrix(1, 0, 0, 1, 68.263355, 60.227686)"></path>
+</svg>

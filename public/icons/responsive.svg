@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 300" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <path style="fill: none; stroke: rgb(21, 91, 83); stroke-width: 5px;" d="M 151.688 2.101 L 20.926 79.353 C 20.926 79.353 20.235 216.914 20.461 216.914 C 20.687 216.914 148.807 298.355 148.807 298.355 L 280.2 221.303 L 279.804 73.476 L 151.688 2.101 Z"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-linejoin: round; stroke-linecap: round; stroke-width: 5px; fill: none;" d="M 83.227 68.856 C 83.227 68.856 82.677 223.892 83.583 230.176 C 84.489 236.46 90.259 242.142 94.915 243.104 L 208.586 244.716 C 212.962 244.478 220.816 233.081 221.01 228.718 C 221.204 224.355 221.835 70.208 221.835 70.208 C 221.711 66.698 219.906 56.56 214.113 55.564 C 208.32 54.568 92.529 54.795 92.529 54.795 C 88.399 55.563 83.495 60.836 83.227 68.856 Z"></path>
+  <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(20, 90, 82); stroke-width: 5px;" d="M 95.554 67.93 L 96.172 204.997 C 96.172 204.997 208.956 205.674 208.827 205.931 C 208.698 206.188 208.574 67.974 208.574 67.974 C 208.574 67.974 95.753 67.921 95.554 67.93 Z"></path>
+  <ellipse style="stroke: rgb(20, 90, 82); stroke-width: 5px; stroke-linejoin: round; stroke-linecap: round; fill: none;" cx="151.895" cy="224.336" rx="7.745" ry="7.747"></ellipse>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 104.217 99.593 L 172.392 99.36"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.732 111.025 L 183.554 110.431"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.92 121.275 L 130.747 121.061"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.73 134.26 L 177.765 134.436"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 104.149 145.153 L 171.28 144.634"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 104.25 156.94 L 138.834 157.395"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.435 166.382 L 138.658 166.604"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.324 176.374 L 138.848 176.605"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 102.904 185.817 L 138.381 186.035"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 103.104 195.544 L 188.758 196.178"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 149.51 155.652 L 149.403 185.811 L 199.292 186.306 L 199.671 156.073 C 199.671 156.073 150.224 156.141 149.51 155.652 Z"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-width: 3px; stroke-linejoin: round; stroke-linecap: round; fill: none;" d="M 104.008 75.788 L 104.174 89.649 L 200.93 89.565 C 200.93 89.565 201.316 75.915 201.188 75.786 C 201.06 75.657 103.778 75.942 104.008 75.788 Z"></path>
+</svg>

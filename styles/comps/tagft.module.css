@@ -1,0 +1,21 @@
+.tag{
+  padding: 7px;
+  background: var(--w-3);
+  font-family: var(--font-text);
+  font-size: 13px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.tag:hover{
+  cursor: pointer;
+  background: var(--w-2);
+}
+.selected{
+  background: var(--b-bright);
+  color: var(--w-5);
+}
+.tag.selected:hover{
+  background: var(--b-med);
+}

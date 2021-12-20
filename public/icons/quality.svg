@@ -1,0 +1,10 @@
+<svg viewBox="0 0 300 300" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <path style="fill: none; stroke: rgb(21, 91, 83); stroke-width: 5px;" d="M 151.688 2.101 L 20.926 79.353 C 20.926 79.353 20.235 216.914 20.461 216.914 C 20.687 216.914 148.807 298.355 148.807 298.355 L 280.2 221.303 L 279.804 73.476 L 151.688 2.101 Z"></path>
+  <ellipse style="stroke: rgb(20, 90, 82); stroke-width: 5px; fill: none;" cx="150" cy="100" rx="54.824" ry="56.44"></ellipse>
+  <ellipse style="stroke: rgb(20, 90, 82); stroke-width: 5px; fill: none;" cx="150.007" cy="99.95" rx="46.57" ry="48.142"></ellipse>
+  <path style="fill: none; stroke-linecap: round; stroke: rgb(20, 90, 82); stroke-linejoin: round; stroke-width: 5px;" d="M 107.57 146.895 L 84.019 211.401 C 84.019 211.401 103.762 196.669 103.989 196.442 C 104.216 196.215 105.514 227.358 105.514 227.358 L 131.167 161.549"></path>
+  <path style="fill: none; stroke-linecap: round; stroke: rgb(20, 90, 82); stroke-linejoin: round; stroke-width: 5px;" d="M 90.261 162.094 L 134.024 243.463 C 134.024 243.463 133.294 216.488 133.521 216.261 C 133.748 216.034 158.688 231.887 158.688 231.887 L 111.11 146.925" transform="matrix(1, 0, 0, 1, 84.008435, -2.577449)"></path>
+  <path style="stroke: rgb(20, 90, 82); stroke-linecap: round; stroke-linejoin: round; stroke-width: 5px; fill: none;" d="M 119.478 94.6 L 139.821 132.363 L 185.084 81.323 L 141.717 114.403 L 119.478 94.6 Z"></path>
+  <path style="stroke-linecap: round; stroke-linejoin: round; stroke: rgb(20, 90, 82); stroke-width: 5px; fill: none;" d="M 131.718 161.088 C 131.437 165.58 166.22 167.462 173.571 160.025"></path>
+</svg>

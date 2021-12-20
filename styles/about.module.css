@@ -1,0 +1,17 @@
+.aboutCov {
+  z-index: 5;
+  width: 90%;
+  min-height: 30vh;
+  height: auto;
+  margin: 5%;
+}
+
+.centralBox {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  max-width: 800px;
+  max-height: 500px;
+  padding: 25px;
+}

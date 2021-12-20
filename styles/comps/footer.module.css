@@ -1,0 +1,36 @@
+.footer{
+  background: var(--b-dim);
+  padding: 25px 0;
+}
+.ftCont{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.linkCol{
+  flex-grow: 1;
+  text-align: center;
+}
+.link{
+  color: var(--w-5);
+  font-family: var(--font-text);
+  font-weight: 300;
+  display: block;
+  padding: 5px;
+}
+.breaker{
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+  border-top: none;
+  border-bottom: solid var(--b-med) 1px;
+}
+.copyright{
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+  color: var(--w-5);
+  font-family: var(--font-text);
+  font-weight: 300;
+}
