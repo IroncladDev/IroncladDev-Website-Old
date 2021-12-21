@@ -11,19 +11,26 @@ export default class Li extends Component {
     }
   }
   componentDidMount() {
-    const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop()
+    const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift();
+    let cookieData = [false, ""];
+    try{
+      cookieData = JSON.parse(decodeURIComponent(cookie("uid")))
+      console.log(decodeURIComponent(cookie("uid")))
+    }catch(e){}
     this.setState({
-      cookie: JSON.parse(decodeURIComponent(cookie("uid"))) || [false, ""]
+      cookie: cookieData
     }, () => {
-      if(this.state.cookie[0] === this.props.name){
+      if (this.state.cookie[0] === this.props.name) {
         this.scrollDiv.current.scrollIntoView({ behavior: 'smooth' })
       }
     })
+
   }
   render() {
     let findEqual = this.props.name === this.state.cookie[0];
+    let blank=()=>{};
     return (
-      <div ref={this.scrollDiv} className={styles.li + " " + (findEqual && styles.selected)}>
+      <div ref={this.scrollDiv} onClick={this.props.editRow ? (() => {this.props.editRow(this.props._id)}) : blank} className={styles.li + " " + (findEqual && styles.selected)}>
         <div>#{this.props.number}{" "}{findEqual ? this.state.cookie[1] : this.props.name.slice(0, 10)}</div>
         <div style={{
           flex: '1'

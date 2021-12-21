@@ -119,4 +119,7 @@
   .logoName{
     display: none;
   }
+  .hireBtn{
+    padding: 0;
+  }
 }

@@ -16,20 +16,18 @@ export default class Waitlist extends Component {
   }
   async componentDidMount() {
     const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift();
-    console.log(decodeURIComponent(cookie("uid")))
     const dt = await fetch(`/api/waitlist`)
     const data = await dt.json();
-    if (data) {
-      this.setState({
-        data,
-        cookie: JSON.parse(decodeURIComponent(cookie("uid"))) || [false, ""]
-      })
-    } else {
-      this.setState({
-        data: [],
-        cookie: [false, ""]
-      })
-    }
+    let cookieData = [false, ""];
+    try{
+      cookieData = JSON.parse(decodeURIComponent(cookie("uid")))
+      console.log(decodeURIComponent(cookie("uid")))
+    }catch(e){}
+    this.setState({
+      data,
+      cookie: cookieData
+    })
+
   }
   render() {
     return (<div className={styles.container}>
@@ -38,7 +36,7 @@ export default class Waitlist extends Component {
       </Head>
       <h1 className={classes._header}>Waitlist</h1>
       <div className={styles.blockCont}>
-        {this.state.data.map((l, ind) => <Li key={l._id} number={ind+1} name={l._id} date={l.date} status={l.status}/>)}
+        {this.state.data.map((l, ind) => <Li key={l._id} number={ind + 1} name={l._id} date={l.date} status={l.status} />)}
       </div>
 
       <Footer />

@@ -3,73 +3,93 @@ import styles from '../styles/Admin.module.css'
 import classes from '../styles/classes.module.css'
 import Link from 'next/link';
 import { Component } from 'react';
+import Script from 'next/script';
+import Swal from 'sweetalert2';
+import { parse } from 'cookie';
+import Admin from '../components/admin';
+import { Wait, Site } from '../scripts/mongo.js'
 
-export default class Admin extends Component {
+export default class ADM extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: ""
+      error: "",
+      value: ""
     }
+    this.update = this.update.bind(this);
     this.authorize = this.authorize.bind(this);
   }
-  async authorize() {
-    window.addEventListener('message', authComplete);
+  authorize() {
+    let val = this.state.value;
+    OAuth.initialize('HfN7eGLAj6AL_hnnPyPA2hRRMM0')
+    OAuth.popup('github').done(function (result) {
+      result.me().done(async function (dt) {
+        let data = dt;
+        data.password = val;
+        let _d = await fetch("/api/auth", {
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "*/*",
+          },
+          method: "POST",
+          body: JSON.stringify(data)
+        }).then(r => r.json())
 
-    var h = 500;
-    var w = 350;
-    var left = (screen.width / 2) - (w / 2);
-    var top = (screen.height / 2) - (h / 2);
-
-    var authWindow = window.open(
-      'https://repl.it/auth_with_repl_site?domain=' + location.host,
-      '_blank',
-      'modal =yes, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left)
-
-    function authComplete(e) {
-      if (e.data !== 'auth_complete') {
-        return;
-      }
-      window.removeEventListener('message', authComplete);
-      authWindow.close();
-      Router.push('/admin?', null)
-    }
-
+        if (_d.success) {
+          location.reload();
+        } else {
+          Swal.fire({
+            title: "Unauthorized",
+            text: _d.message,
+            icon: "error"
+          })
+        }
+      })
+    })
+  }
+  update(e) {
+    this.setState({
+      value: e.target.value
+    })
   }
   render() {
     return (
-      <div>
-
+      <div className={styles.bodyCont}>
         <Head>
           <title>Admin | IroncladDev</title>
         </Head>
-        <div className={styles.bodyCont}>
+        {this.props.auth ? <Admin {...this.props}/> : <div>
+          <Script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></Script>
 
-          <button className={classes.button} onClick={this.authorize}>Authorize</button>
-
-        </div>
+          <div className={styles.loginBox}>
+          <h2 className={classes._header} style={{fontSize: '2em',paddingTop: 0}}>Log In</h2>
+          <p className={classes.textCenter + " " + classes.centerx}>Please Log Into the Administration Dashboard.</p>
+            <input className={classes.input + " " + classes.blockInput + " " + classes.centerx} onChange={this.update} value={this.state.value} />
+            <button className={classes.button + " " + classes.blockBtn} onClick={this.authorize}>Log In</button>
+          </div>
+        </div>}
       </div>
     );
   }
 }
 
-
-
 export async function getServerSideProps(ctx) {
   const req = ctx.req;
   const res = ctx.res;
-  if (req.headers['x-replit-user-name']) {
+  const cookies = parse(ctx.req.headers.cookie||"");
+  
+  if (cookies.admin === process.env.ADMSS) {
     return {
       props: {
-        username: req.headers['x-replit-user-name'],
-        userid: req.headers["x-replit-user-id"],
+        auth: true,
+        waits: JSON.stringify(await Wait.find({}).sort("date")),
+        sites: JSON.stringify(await Site.find({}).sort("posval"))
       }
     }
-    console.log(req.headers["x-replit-user-name"])
-    console.log(req.headers["x-replit-user-id"])
   } else {
     return {
       props: {
-        sad: true
+        auth: false
       }
     }
   }

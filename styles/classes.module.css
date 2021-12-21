@@ -82,7 +82,7 @@
   position: relative;
   left: 50%;
   transform: translatex(-50%);
-  width: 80%;
+  width: 100%;
   max-width: 300px;
 }
 .blockBtnLeft{

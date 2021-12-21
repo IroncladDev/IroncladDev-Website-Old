@@ -8,7 +8,8 @@ const siteSchema = new mongoose.Schema({
   desc: { type: String, index: true },
   link: { type: String, index: true },
   created: { type: String, index: true, default: (new Date).getTime() },
-  cover: { type: String, index: true }
+  cover: { type: String, index: true },
+  posval: { type: Number, index: true, default: 0 }
 },
   {
     timestamps: true
