@@ -30,13 +30,13 @@ export default class Waitlist extends Component {
 
   }
   render() {
-    return (<div className={styles.container}>
+    return (<div className={styles.container} style={{background: 'var(--w-4)'}}>
       <Head>
         <title>Waitlist | Ironcladdev</title>
       </Head>
       <h1 className={classes._header}>Waitlist</h1>
       <div className={styles.blockCont}>
-        {this.state.data.map((l, ind) => <Li key={l._id} number={ind + 1} name={l._id} date={l.date} status={l.status} />)}
+        {this.state.data.length > 0 ? this.state.data.map((l, ind) => <Li key={l._id} number={ind + 1} name={l._id} date={l.date} status={l.status} />) : <p className={classes.centerx} style={{fontStyle:"italic", textAlign: "center", color: 'var(--w-1)'}}>Nobody&apos;s on the waitlist right now.  Be the first!</p>}
       </div>
 
       <Footer />

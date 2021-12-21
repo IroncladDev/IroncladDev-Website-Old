@@ -1,5 +1,6 @@
 .blockCont{
   width: 90%;
+  min-height: calc(100vh - 250px);
   margin: 25px auto;
   max-width: 800px;
   height: auto;

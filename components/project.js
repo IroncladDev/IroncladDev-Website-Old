@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/comps/proj.module.css'
+import Fade from './fade'
 
 
 export default function Project(props) {
   return (
+    <Fade>
     <div className={styles.proj} style={props.style}>
       <div className={styles.illustration}>
         <img src={props.image} alt="project cover image" className={styles.image} />
@@ -15,5 +17,6 @@ export default function Project(props) {
       </div>
       
     </div>
+    </Fade>
   );
 }//title, desc, link, image, style

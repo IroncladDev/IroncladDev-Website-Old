@@ -5,7 +5,7 @@ import { app, limiter } from '../../scripts/util.js'
 
 
 
-app.use(limiter(60 * 1000, 3));
+
 app.post(async (req, res) => {
   if (req.method === "POST") {
     let body = req.body

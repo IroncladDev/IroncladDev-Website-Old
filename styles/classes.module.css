@@ -1,37 +1,37 @@
-.container{
+.container {
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  min-height:100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
   padding-top: 70px;
 }
-.relcont{
-  width:100%;
-  height:100%;
-  min-height:100vh;
+.relcont {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
   padding-top: 70px;
   display: block;
 }
-.blockContainer{
+.blockContainer {
   width: 90%;
   margin: 25px auto;
   max-width: 800px;
   height: auto;
   padding: 25px;
 }
-.displayDark{
+.displayDark {
   color: var(--w-3) !important;
 }
-._header{
+._header {
   font-size: 4em;
   padding-top: 50px;
   font-family: var(--font-title);
   color: var(--g-dim);
   text-align: center;
 }
-.button{
+.button {
   padding: 12.5px 30px;
   border-radius: 75px;
   font-size: 17.5px;
@@ -40,44 +40,44 @@
   border: none;
   font-family: var(--font-text);
 }
-.button:hover{
+.button:hover {
   cursor: pointer;
 }
-.button:disabled{
+.button:disabled {
   opacity: 0.5;
 }
-.button:disabled:hover{
-  cursor:not-allowed;
+.button:disabled:hover {
+  cursor: not-allowed;
 }
-.blockSlant{
+.blockSlant {
   max-height: 400px;
   height: 50vh;
   width: 100%;
 }
-.overlayer{
+.overlayer {
   display: grid;
   grid-template-columns: 1fr;
 }
-.overlayElement{
+.overlayElement {
   grid-row-start: 1;
   grid-column-start: 1;
 }
-.centerx{
+.centerx {
   position: relative;
   left: 50%;
   transform: translatex(-50%);
 }
-.link{
+.link {
   color: var(--y-bright);
   text-decoration: none;
 }
-.hov:hover{
+.hov:hover {
   cursor: pointer;
 }
-.textCenter{
+.textCenter {
   text-align: center !important;
 }
-.blockBtn{
+.blockBtn {
   text-align: center;
   position: relative;
   left: 50%;
@@ -85,13 +85,13 @@
   width: 100%;
   max-width: 300px;
 }
-.blockBtnLeft{
+.blockBtnLeft {
   text-align: center;
   position: relative;
   width: 100%;
   max-width: 300px;
 }
-.blockInput{
+.blockInput {
   position: relative;
   width: 100%;
   max-width: 300px;
@@ -103,21 +103,21 @@
   min-height: 100vh;
   height: auto;
 }
-.formLabel{
+.formLabel {
   font-family: var(--font-text);
   font-weight: 300;
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 10px;
 }
-.formDesc{
+.formDesc {
   font-family: var(--font-text);
   font-size: 14px;
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.input{
+.input {
   border: solid var(--w-3) 1px;
   border-radius: 5px;
   padding: 10px;
@@ -126,11 +126,11 @@
   font-weight: 300;
   transition: 0.25s;
 }
-.input:focus{
-  border: solid rgb(0,200,255) 1px;
+.input:focus {
+  border: solid rgb(0, 200, 255) 1px;
   box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.5);
 }
-.darkBtn{
+.darkBtn {
   background: var(--b-bright);
   border-radius: 5px;
   padding: 10px;
@@ -140,14 +140,24 @@
   font-family: var(--font-text);
   transition: 0.25s;
 }
-.darkBtn:hover{
+.darkBtn:hover {
   cursor: pointer;
   background: var(--b-med);
 }
 
-@media(max-width: 600px){
-  ._header{
+@media (max-width: 600px) {
+  ._header {
     font-size: 2.5em;
     padding-top: 25px;
   }
+}
+.op0 {
+  opacity: 0;
+  transition: 1.5s;
+  border-top: solid transparent 25px;
+}
+.op1 {
+  opacity: 1;
+  transition: 1.5s;
+  border-top: solid transparent 0px;
 }

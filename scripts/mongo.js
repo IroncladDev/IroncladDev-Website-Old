@@ -26,8 +26,12 @@ const waitSchema = new mongoose.Schema({
     timestamps: true
   })
 
+const dataSchema = new mongoose.Schema({
+  allowRequests: {type: Boolean, index: true, default: false},
+})
+
 //process.env.MONGO_URI
-mongoose.connect("mongodb://127.0.0.1:27017/web", {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
