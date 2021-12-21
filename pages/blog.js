@@ -1,13 +1,16 @@
 import { Component } from 'react';
-import { render } from 'react-dom';
 import Footer from '../components/footer'
 import Nav from '../components/nav'
 import classes from '../styles/classes.module.css'
+import Head from 'next/head'
 
 export default class Blog extends Component {
   render() {
     return (
       <div>
+      <Head>
+        <title>Blog</title>
+      </Head>
         <div className={classes.relcont}>
           <div style={{
             position: 'absolute',

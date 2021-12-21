@@ -1,7 +1,5 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import nextConnect from "next-connect";
 import { Site } from '../../scripts/mongo.js'
-import { app, limiter } from '../../scripts/util.js'
+import { app } from '../../scripts/util.js'
 
 
 

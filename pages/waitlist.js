@@ -3,7 +3,6 @@ import styles from '../styles/waitlist.module.css'
 import classes from '../styles/classes.module.css'
 import Nav from '../components/nav.js';
 import Li from '../components/li.js';
-import Link from 'next/link';
 import { Component } from 'react';
 import Footer from '../components/footer';
 
