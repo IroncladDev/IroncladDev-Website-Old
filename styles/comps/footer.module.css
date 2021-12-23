@@ -18,6 +18,8 @@
   font-weight: 300;
   display: block;
   padding: 5px;
+  text-decoration: underline !important;
+  display: inline-block;
 }
 .breaker{
   width: 90%;
@@ -25,6 +27,8 @@
   margin: 25px auto;
   border-top: none;
   border-bottom: solid var(--b-med) 1px;
+  border-left: none;
+  border-right: none;
 }
 .copyright{
   width: 90%;

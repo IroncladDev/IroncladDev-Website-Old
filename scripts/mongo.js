@@ -26,9 +26,16 @@ const waitSchema = new mongoose.Schema({
     timestamps: true
   })
 
-const dataSchema = new mongoose.Schema({
-  allowRequests: {type: Boolean, index: true, default: false},
-})
+const postSchema = new mongoose.Schema({
+  title: { type: String, index: true },
+  body: { type: String, index: true },
+  cover: { type: String, index: true },
+  tags: { type: String, index: true }
+},
+  {
+    timestamps: true
+  })
+
 
 //process.env.MONGO_URI
 mongoose.connect(process.env.MONGO_URI, {
@@ -38,3 +45,4 @@ mongoose.connect(process.env.MONGO_URI, {
 
 export const Site = mongoose.models.Site || mongoose.model("Site", siteSchema);
 export const Wait = mongoose.models.Wait || mongoose.model("Wait", waitSchema);
+export const Post = mongoose.models.Post || mongoose.model("Post", postSchema);

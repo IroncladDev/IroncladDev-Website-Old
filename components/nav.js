@@ -32,7 +32,7 @@ export default class Nav extends Component {
     }
   }
   render() {
-    return (<div className={styles.nav + " " + (this.props.stay ? styles.darknav : (this.state.dark && styles.darknav))}>
+    return (<nav className={styles.nav + " " + (this.props.stay ? styles.darknav : (this.state.dark && styles.darknav))}>
       <div className={styles.navCont}>
         <div className={styles.flexL}>
           <div className={styles.logo}>
@@ -66,6 +66,6 @@ export default class Nav extends Component {
           <button className={classes.button + " " + styles.hireBtn}>Hire Me</button>
         </Link>
       </div>
-    </div>);
+    </nav>);
   }
 }

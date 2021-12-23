@@ -1,8 +1,12 @@
 import '../styles/globals.css'
 import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (<>
     <Head>
       <meta property="og:type" content="website" />

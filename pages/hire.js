@@ -308,7 +308,7 @@ export default class Hire extends Component {
               </div>
             ) : (<div>
               <div className={classes.formLabel}>If you&apos;re a robot, you shall not pass.</div>
-              <div className={classes.formDesc}>Please prove that you are of flesh and bones</div>
+              <div className={classes.formDesc}>Please prove that you are of flesh and bones.</div>
               <HCaptcha
                 sitekey="124ace2d-8845-47ab-b258-05cf91845687"
                 onVerify={(token, ekey) => this.runCaptcha(token, ekey)}

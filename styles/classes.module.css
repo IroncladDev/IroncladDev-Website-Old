@@ -35,13 +35,15 @@
   padding: 12.5px 30px;
   border-radius: 75px;
   font-size: 17.5px;
-  background: var(--y-dim);
+  background: var(--y-med);
   color: var(--w-4);
   border: none;
   font-family: var(--font-text);
+  transition: 0.25s;
 }
 .button:hover {
   cursor: pointer;
+  background: var(--y-dim);
 }
 .button:disabled {
   opacity: 0.5;
@@ -67,9 +69,19 @@
   left: 50%;
   transform: translatex(-50%);
 }
+.centerxy {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .link {
-  color: var(--y-bright);
+  color: var(--y-med);
   text-decoration: none;
+  transition: 0.25s;
+}
+.link:hover{
+  color: var(--y-dim);
 }
 .hov:hover {
   cursor: pointer;
@@ -112,7 +124,7 @@
 }
 .formDesc {
   font-family: var(--font-text);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -127,8 +139,8 @@
   transition: 0.25s;
 }
 .input:focus {
-  border: solid rgb(0, 200, 255) 1px;
-  box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.5);
+  border: solid rgb(0, 150, 200) 1px;
+  box-shadow: 0 0 0 3px rgba(0, 150, 200, 0.5);
 }
 .darkBtn {
   background: var(--b-bright);
@@ -146,6 +158,9 @@
 }
 
 @media (max-width: 600px) {
+  .formDesc{
+    font-size: 14px;
+  }
   ._header {
     font-size: 2.5em;
     padding-top: 25px;
@@ -154,10 +169,10 @@
 .op0 {
   opacity: 0;
   transition: 1.5s;
-  border-top: solid transparent 25px;
+  transform: translatey(50px);
 }
 .op1 {
   opacity: 1;
   transition: 1.5s;
-  border-top: solid transparent 0px;
+  transform: translatey(0px);
 }

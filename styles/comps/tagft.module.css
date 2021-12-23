@@ -1,8 +1,8 @@
 .tag{
-  padding: 7px;
+  padding: 10px;
   background: var(--w-3);
   font-family: var(--font-text);
-  font-size: 13px;
+  font-size: 15px;
   margin: 5px;
   display: inline-block;
   border-radius: 5px;
@@ -18,4 +18,10 @@
 }
 .tag.selected:hover{
   background: var(--b-med);
+}
+@media(max-width: 600px){
+  .tag{
+    font-size: 13px;
+    padding: 7px;
+  }
 }

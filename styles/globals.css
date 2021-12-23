@@ -8,9 +8,9 @@
   --gr-med: #00433A;
   --gr-dim: #062925;
 
-  --y-bright: #ffce45;
-  --y-med: #e6bc32;
-  --y-dim: #d4ac2b;
+  --y-bright: #efde35;
+  --y-med: #d6ac22;
+  --y-dim: #cc9c1b;
 
   --w-5: #ffffff;
   --w-4: #fafafa;
@@ -60,7 +60,7 @@ p {
   font-family: var(--font-text);
   line-height: 30px;
   font-size: 18px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   word-spacing: 0.1em;
   font-weight: 300;
   max-width: 700px;
@@ -90,25 +90,14 @@ section {
 
 @media (max-width: 400px) {
   p {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
     word-spacing: 0.05em;
     font-size: 14px;
     line-height: 25px;
   }
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
-::-webkit-scrollbar-thumb {
-  background: var(--gr-dim); 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--gr-med); 
-}
+
 .swal2-title{
   font-family: var(--font-text);
   font-weight: 400;

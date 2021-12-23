@@ -34,7 +34,7 @@ export default class Home extends Component {
           <div className={styles.slant3}></div>
           <div className={styles.header}>
             <div className={styles.headBlock}>
-              <h1 className={styles.title}>I&apos;m{" "}<span style={{ color: "var(--y-bright)" }}>The Guy</span>{" "}to<br />Build Your Site</h1>
+              <h1 className={styles.title}>I&apos;m{" "}<span style={{ color: "var(--y-med)" }}>The Guy</span>{" "}to<br />Build Your Site</h1>
               <p className={classes.displayDark + " " + styles.headDescription}>I build websites of all kinds from single-page websites to fully-functional ecommerce stores.</p>
             </div>
             <div className={styles.iwrap}>
@@ -50,7 +50,7 @@ export default class Home extends Component {
             height: "15vh"
           }}></div>
           <FT title="Responsive" content="I make sure that every website I make looks nice and fits on all devices from miniature phones to massive computers." icon="/icons/responsive.svg" style={{ marginTop: 0 }} />
-          <FT title="On-Time" content="You can call me lots of things, but you can't call me late. Time is priceless and I try my best to make use of every second. You can count on me to get your website done in a timely manner" icon="/icons/clock.svg" />
+          <FT title="On-Time" content="You can call me lots of things, but you can't call me late. Time is priceless and I try my best to make use of every second. You can count on me to get your website done in a timely manner." icon="/icons/clock.svg" />
           <FT title="Sustainable Quality" content="Persistence, Equity, Skill, and Design are four elements I keep at my side when developing for others.  I will unleash my skills and ensure satisfaction." icon="/icons/quality.svg" />
           <FT title="Best Performance" content="I use some of the latest web development technologies to ensure that your site will run fast, perform well, and satisfy you and people viewing your website." icon="/icons/performance.svg" />
           <FT title="Customization" content="I'll make sure your website comes out in the right style!  Tell me what you want and I'll try my best to implement it.  I'll make sure your site is worthy to be on the internet." icon="/icons/design.svg" />

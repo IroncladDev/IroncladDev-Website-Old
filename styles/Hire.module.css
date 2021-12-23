@@ -12,7 +12,6 @@
   transform: translate(-50%, -50%);
   max-width: 500px;
   padding: 25px;
-  background: rgba(0,0,0,0.2);
 }
 .coreForm{
   max-width: 800px;
@@ -34,11 +33,12 @@
   width: 100%;
 }
 .inputPageTitle{
-  flex: 0 0 150px;
+  flex: 0 0 15vw;
   min-height: 40px;
+  min-width: 150px;
 }
 .inputPageDescription {
-  flex: 0 0 calc(100% - 270px);
+  flex-grow: 1;
   margin: 0 10px;
   min-height: 40px;
 }

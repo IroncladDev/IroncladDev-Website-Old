@@ -45,7 +45,7 @@ export default class About extends Component {
             <div className={classes.overlayElement + " " + styles.abtCover}>
               <div className={styles.centralBox}>
                 <h1 className={classes._header + " " + classes.displayDark}>My Showcase</h1>
-                <h2 className={classes.textCenter + " " + classes.displayDark} style={{ marginTop: 25 }}>The best of my work 🤘</h2>
+                <h2 className={classes.textCenter + " " + classes.displayDark} style={{ marginTop: 25 }}>The best of my work</h2>
               </div>
             </div>
             <div className={classes.overlayElement + " " + classes.slant} style={{

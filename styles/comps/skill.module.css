@@ -1,21 +1,22 @@
 .skill{
   display: flex;
   max-width: 600px;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 .skill:first-of-type{
   margin-top: 0;
 }
 .skill:last-of-type{
   margin-bottom: 0;
+  padding-bottom: 100px;
 }
 .lang{
-  width: 50px;
+
   height: 50px;
   align-self: center;
 }
 .dsc{
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .dark{
   border-radius: 50%;
