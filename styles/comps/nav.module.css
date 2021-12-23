@@ -92,11 +92,11 @@
     margin-top: 5px;
   }
   .hireBtn {
-    top:7.5px;
-    right:7.5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    min-width: 75px;
+    top:7.5px !important;
+    right:7.5px !important;
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+    min-width: 75px !important;
   }
   .logoNameImg{
     height: 20px;
@@ -118,8 +118,5 @@
 @media(max-width: 425px){
   .logoName{
     display: none;
-  }
-  .hireBtn{
-    padding: 0;
   }
 }
