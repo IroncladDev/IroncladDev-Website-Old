@@ -3,25 +3,23 @@ import Footer from '../components/footer'
 import Nav from '../components/nav'
 import classes from '../styles/classes.module.css'
 import Head from 'next/head'
+import styles from '../styles/blog.module.css'
+import Post from '../components/bloog'
 
 export default class Blog extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <div>
       <Head>
         <title>Blog</title>
       </Head>
-        <div className={classes.relcont}>
-          <div style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-          }}>
-            <h1 style={{
-              fontFamily: 'var(--font-text)',
-              fontWeight: '300'
-            }}>My Blog is currently under construction</h1>
+        <div className={classes.relcont} style={{paddingTop: '100px'}}>
+          <h1 className={classes._header}>My Blog</h1>
+          <div className={styles.grid + " " + classes.centerx} style={{paddingTop: '50px', paddingBottom: 100}}>
+            {this.props.posts.map(p => <Post key={p.id} title={p.title} desc={p.description} cover={p.social_image} url={p.url||"/noimg.svg"} date={p.readable_publish_date} year={p.published_at.split`-`[0]} read={p.reading_time_minutes}/>)}
           </div>
         </div>
         <Footer />
@@ -29,4 +27,14 @@ export default class Blog extends Component {
       </div>
     )
   }
+}
+
+export async function getServerSideProps(){
+  let endpoint = await fetch("https://dev.to/api/articles?username=ironcladdev");
+  let data = await endpoint.json();
+    return {
+      props: {
+        posts: data
+      }
+    }
 }
