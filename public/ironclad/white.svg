@@ -12,9 +12,7 @@
   <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 253.053 179.634 L 252.998 157.173"></path>
   <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 245.312 162.211 L 245.636 174.089"></path>
   <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 260.783 161.889 L 260.531 174.266"></path>
-  <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 253.4 417.145 L 255.534 343.451"></path>
-  <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 200.776 416.487 L 221.41 397.011 L 222.673 343.778"></path>
-  <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 286.763 343.166 L 286.125 397.981 C 286.125 397.981 308.065 418.111 308.269 418.111"></path>
+  <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 253.4 417.145 L 252.996 343.413"></path>
   <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 199.05 372.215 L 198.809 285.507 L 148.863 220.278 L 177.12 186.433 L 144.322 161.127 L 114.741 176.138"></path>
   <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 309.956 376.689 L 310.294 284.23 L 358.432 225.822 L 319.325 177.834 C 319.325 177.834 354.411 159.549 354.005 159.764 C 353.598 159.978 383.694 182.256 383.694 182.256"></path>
   <path style="stroke-linecap: round; fill: none; stroke-linejoin: round; stroke-width: 4px; stroke: rgb(255, 255, 255);" d="M 235.216 329.508 C 235.216 329.508 272.847 329.383 273.05 329.383 C 273.254 329.383 288.694 296.365 289.1 296.365 C 289.507 296.365 269.526 264.99 269.324 264.56 C 269.121 264.133 236.795 264.646 236.795 264.646 C 236.795 264.646 215.399 296.416 216.416 296.416 C 217.434 296.416 234.136 328.111 235.216 329.508 Z"></path>
@@ -54,4 +52,6 @@
   <path style="fill: none; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 404.239 68.773 L 416.828 99.965 C 416.828 99.965 405.326 120.187 405.188 120.187"></path>
   <path style="fill: none; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 415.05 121.016 L 422.949 111.094 L 425.908 99.688 L 415.995 72.25"></path>
   <path style="fill: none; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(255, 255, 255);" d="M 425.277 124.646 L 432.989 114.254 L 434.105 97.89 L 427.295 81.467"></path>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 4px; stroke-linejoin: round; stroke-linecap: round; stroke: rgb(255, 255, 255);" d="M 222.811 348.169 L 222.668 399.087"></path>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 4px; stroke-linejoin: round; stroke-linecap: round; stroke: rgb(255, 255, 255);" d="M 284.14 348.624 L 283.639 400.003"></path>
 </svg>

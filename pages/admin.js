@@ -7,7 +7,7 @@ import Script from 'next/script';
 import Swal from 'sweetalert2';
 import { parse } from 'cookie';
 import Admin from '../components/admin';
-import { Wait, Site, Post } from '../scripts/mongo.js'
+import { Wait, Site, Sub } from '../scripts/mongo.js'
 
 export default class ADM extends Component {
   constructor(props) {
@@ -84,7 +84,7 @@ export async function getServerSideProps(ctx) {
         auth: true,
         waits: JSON.stringify(await Wait.find({}).sort("date")),
         sites: JSON.stringify(await Site.find({}).sort("posval")),
-        posts: JSON.stringify(await Post.find({}))
+        subs: JSON.stringify(await Sub.find({}))
       }
     }
   } else {

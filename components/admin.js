@@ -356,18 +356,14 @@ class Bloog extends Component {
 
           <div className={styles.projAdd + " " + classes.centerx}>
             <form onSubmit={this.addPost} className={styles.addForm}>
-              <h1 className={classes.textCenter}>Add Post</h1>
-              <input className={classes.input} placeholder="Title" name="title" autoComplete="off" required={true} />
-              <textarea placeholder="Body" className={classes.input} name="desc" autoComplete="off" rows={6} required={true}></textarea>
-              <input className={classes.darkBtn} onChange={this.getBase64} name="image" type="file" placeholder="Image URL" accept="image/*" required={true} />
-              <input className={classes.input} placeholder="Tags (seperate by commas)"/>
-              <input className={classes.darkBtn} type="submit" />
+              <h1 className={classes.textCenter}>Message Subscribers</h1>
+              <input className={classes.input} name="title" placeholder="Email Title"/>
+              <textarea className={classes.input} rows="6" placeholder="Body (HTML Supported)"></textarea>
+              <button className={classes.darkBtn} type="submit">Send</button>
             </form>
           </div>
 
-          <div style={{ background: 'transparent' }}>
-            {JSON.stringify(this.state.data)}
-          </div>
+          
 
         </div>
       </div>
@@ -395,7 +391,7 @@ class Tabs extends Component {
         <Tab tab={this.props.tab} switch={this.props.switch} name="Waitlist" num={0} />
         <Tab tab={this.props.tab} switch={this.props.switch} name="Projects" num={1} />
         <Tab tab={this.props.tab} switch={this.props.switch} name="Payment" num={2} />
-        <Tab tab={this.props.tab} switch={this.props.switch} name="Blog" num={3} />
+        <Tab tab={this.props.tab} switch={this.props.switch} name="Emailing" num={3} />
       </div>
     )
   }
@@ -421,7 +417,7 @@ export default class Admin extends Component {
         {this.state.tab === 0 && <Waits data={JSON.parse(this.props.waits)} />}
         {this.state.tab === 1 && <ProjManage data={JSON.parse(this.props.sites)} />}
         {this.state.tab === 2 && <GenPay />}
-        {this.state.tab === 3 && <Bloog data={JSON.parse(this.props.posts)}/>}
+        {this.state.tab === 3 && <Bloog data={JSON.parse(this.props.subs)}/>}
 
 
 

@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/svg" href="/ironclad/head-blue.svg"></link>
     </Head>
+    <noscript><h1>Javascript isn&apos;t allowed!?  Can you imagine??</h1><br/><br/>Please enable javascript in your browser to experience the true awesomeness of this site.</noscript>
     <NextNProgress color="var(--b-bright)" options={{ showSpinner: false }} />
     <Component {...pageProps} />
   </>)

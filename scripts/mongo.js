@@ -26,15 +26,10 @@ const waitSchema = new mongoose.Schema({
     timestamps: true
   })
 
-const postSchema = new mongoose.Schema({
-  title: { type: String, index: true },
-  body: { type: String, index: true },
-  cover: { type: String, index: true },
-  tags: { type: String, index: true }
-},
-  {
-    timestamps: true
-  })
+const subSchema = new mongoose.Schema({
+  email: { type: String, index: true },
+  addr: { type: String, index: true }
+})
 
 
 //process.env.MONGO_URI
@@ -45,4 +40,4 @@ mongoose.connect(process.env.MONGO_URI, {
 
 export const Site = mongoose.models.Site || mongoose.model("Site", siteSchema);
 export const Wait = mongoose.models.Wait || mongoose.model("Wait", waitSchema);
-export const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
+export const Sub = mongoose.models.Sub || mongoose.model("Sub", subSchema);

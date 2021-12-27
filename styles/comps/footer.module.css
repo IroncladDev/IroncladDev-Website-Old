@@ -1,6 +1,49 @@
 .footer{
   background: var(--b-dim);
   padding: 25px 0;
+  display: flex;
+}
+.sideCont{
+  width: 300px;
+
+}
+.logo{
+  width: 75px;
+}
+.logoText{
+  width: calc(100% - 75px);
+}
+.logoFlex{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0 10px;
+  max-width: 300px;
+}
+.subForm{
+  margin-left: 10px;
+  display: inline-block;
+}
+.subForm > input {
+  padding: 7.5px;
+  font-size: 13px;
+}
+.subForm > button {
+  padding: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.flexMain{
+  flex-grow: 1;
+}
+.textPar{
+  color: var(--w-5);
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 0;
+  margin-top: 5px;
 }
 .ftCont{
   width: 90%;
@@ -37,4 +80,19 @@
   color: var(--w-5);
   font-family: var(--font-text);
   font-weight: 300;
+}
+@media(max-width: 700px){
+  .footer{
+    display: block;
+  }
+  .sideCont{
+    width: 100%;
+  }
+  .logoFlex, .textPar{
+    margin-left: 0;
+  }
+  .subForm{
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
 }

@@ -22,9 +22,7 @@ export default function Svg(){
   <path style={pathStyle} d="M 253.053 179.634 L 252.998 157.173"></path>
   <path style={pathStyle} d="M 245.312 162.211 L 245.636 174.089"></path>
   <path style={pathStyle} d="M 260.783 161.889 L 260.531 174.266"></path>
-  <path style={pathStyle} d="M 253.4 417.145 L 255.534 343.451"></path>
-  <path style={pathStyle} d="M 200.776 416.487 L 221.41 397.011 L 222.673 343.778"></path>
-  <path style={pathStyle} d="M 286.763 343.166 L 286.125 397.981 C 286.125 397.981 308.065 418.111 308.269 418.111"></path>
+  <path style={pathStyle} d="M 253.4 417.145 L 252.996 343.413"></path>
   <path style={pathStyle} d="M 199.05 372.215 L 198.809 285.507 L 148.863 220.278 L 177.12 186.433 L 144.322 161.127 L 114.741 176.138"></path>
   <path style={pathStyle} d="M 309.956 376.689 L 310.294 284.23 L 358.432 225.822 L 319.325 177.834 C 319.325 177.834 354.411 159.549 354.005 159.764 C 353.598 159.978 383.694 182.256 383.694 182.256"></path>
   <path style={pathStyle} d="M 235.216 329.508 C 235.216 329.508 272.847 329.383 273.05 329.383 C 273.254 329.383 288.694 296.365 289.1 296.365 C 289.507 296.365 269.526 264.99 269.324 264.56 C 269.121 264.133 236.795 264.646 236.795 264.646 C 236.795 264.646 215.399 296.416 216.416 296.416 C 217.434 296.416 234.136 328.111 235.216 329.508 Z"></path>
@@ -42,16 +40,16 @@ export default function Svg(){
   <path style={pathStyle} d="M 442.405 212.618 C 442.405 212.618 450.547 219.857 450.343 219.857 C 450.141 219.857 440.817 231.626 440.817 231.626"></path>
   <path style={pathStyle} d="M 117.297 207.395 L 133.877 200.89 L 143.487 213.672"></path>
   <path style={pathStyle} d="M 382.918 211.792 L 365.566 206.777 L 361.038 218.601"></path>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="130.045" cy="99.451" rx="31.872" ry="34.476"></ellipse>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="357.581" cy="97.169" rx="32.066" ry="33.364"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="130.045" cy="99.451" rx="31.872" ry="34.476"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="357.581" cy="97.169" rx="32.066" ry="33.364"></ellipse>
   <path style={pathStyle} d="M 120.943 121.616 L 129.371 128.356 L 151.5 112.016 L 151.957 85.784 L 130.121 70.654 C 130.121 70.654 106.679 84.383 106.843 84.383 C 107.005 84.383 106.191 109.529 106.191 109.529 C 106.087 109.674 112.472 115.583 114.273 116.443 C 118.092 116.601 120.468 110.988 121.288 107.513 C 121.786 105.958 121.727 87.258 121.593 86.93"></path>
   <path style={pathStyle} d="M 143.126 91.626 C 142.715 85.919 132.673 85.342 130.932 88.248 C 129.193 91.153 128.128 97.514 130.462 99.118 C 132.349 100.415 139.648 97.407 142.4 99.572 C 144.84 101.489 143.643 107.166 141.735 110.238 C 139.825 113.31 128.001 113.681 129.525 106.824"></path>
   <path style={pathStyle} d="M 378.947 122.036 L 345.106 83.693 L 345.205 109.78"></path>
   <path style={pathStyle} d="M 367.305 100.965 L 367.158 83.532"></path>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="252.761" cy="296.048" rx="28.438" ry="7.919"></ellipse>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="253.376" cy="286.057" rx="29.729" ry="7.77" transform="matrix(0.484047, 0.875042, -0.883692, 0.46841, 383.838848, -58.635929)"></ellipse>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="254.491" cy="286.034" rx="29.583" ry="7.892" transform="matrix(0.472671, -0.881239, 0.860419, 0.511487, -114.488662, 373.896322)"></ellipse>
-  <ellipse style={pathStyle} strokeWidth="5" stroke="rgb(18, 31, 51)" cx="252.442" cy="295.776" rx="4.799" ry="4.989"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="252.761" cy="296.048" rx="28.438" ry="7.919"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="253.376" cy="286.057" rx="29.729" ry="7.77" transform="matrix(0.484047, 0.875042, -0.883692, 0.46841, 383.838848, -58.635929)"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="254.491" cy="286.034" rx="29.583" ry="7.892" transform="matrix(0.472671, -0.881239, 0.860419, 0.511487, -114.488662, 373.896322)"></ellipse>
+  <ellipse style={pathStyle} stroke="rgb(18, 31, 51)" strokeWidth="5" cx="252.442" cy="295.776" rx="4.799" ry="4.989"></ellipse>
   <path style={pathStyle} d="M 92.087 158.311 L 94.977 147.033 L 105.452 146.06 L 119.536 153.286 L 138.011 150.501"></path>
   <path style={pathStyle} d="M 70.863 141.291 L 64.147 134.014 L 55.148 116.054 L 61.515 95.109"></path>
   <path style={pathStyle} d="M 75.452 134.168 L 75.434 133.611 L 68.733 123.881 L 64.516 112.723 L 69.842 88.682"></path>
@@ -64,5 +62,7 @@ export default function Svg(){
   <path style={pathStyle} d="M 404.239 68.773 L 416.828 99.965 C 416.828 99.965 405.326 120.187 405.188 120.187"></path>
   <path style={pathStyle} d="M 415.05 121.016 L 422.949 111.094 L 425.908 99.688 L 415.995 72.25"></path>
   <path style={pathStyle} d="M 425.277 124.646 L 432.989 114.254 L 434.105 97.89 L 427.295 81.467"></path>
+  <path style={pathStyle} d="M 222.811 348.169 L 222.668 399.087"></path>
+  <path style={pathStyle} d="M 284.14 348.624 L 283.639 400.003"></path>
 </svg>);
 }
