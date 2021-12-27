@@ -15,7 +15,8 @@ app.post(async (req, res) => {
         res.json({ success: false, message: "I appreciate it, but you can't subscribe to me more than once.", icon: "warning" })
       } else {
         let sub = new Sub({
-          email: email
+          email: email,
+          addr: requestIp.getClientIp(req)
         })
         await sub.save();
         await res.json({ success: true, data: sub });
