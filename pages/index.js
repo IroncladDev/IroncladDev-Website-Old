@@ -8,6 +8,7 @@ import Project from '../components/project';
 import Link from 'next/link';
 import Footer from '../components/footer'
 import { Component } from 'react';
+import Svg from '../components/drawsvg'
 
 export default class Home extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ export default class Home extends Component {
               <p className={classes.displayDark + " " + styles.headDescription}>I build websites of all kinds from single-page websites to fully-functional ecommerce stores.</p>
             </div>
             <div className={styles.iwrap}>
-              <img src="/ironclad/white.svg" alt="Ironclad Illustration" className={styles.illustration} />
+              <Svg/>
             </div>
           </div>
         </section>
