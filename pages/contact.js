@@ -14,7 +14,9 @@ export default function Contact() {
     </Head>
       <div style={{ paddingTop: 50 }}>
         <section style={{minHeight: '100vh'}}>
-          <h1 className={classes._header}>Contact Me</h1>
+
+        <div style={{position: 'absolute', top: '50%', width: '100%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+        <h1 className={classes._header}>Contact Me</h1>
           <p className={classes.centerx}>Email: <a href="mailto:connerow1115@gmail.com">connerow1115@gmail.com</a><br/>
           Phone Number: Nonexistent at the moment</p>
           <div className={styles.flexGrid}>
@@ -101,6 +103,8 @@ export default function Contact() {
 
             </div>
           </div>
+        </div>
+          
         </section>
 
         <Footer />

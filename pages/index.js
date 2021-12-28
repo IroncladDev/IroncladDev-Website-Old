@@ -50,7 +50,7 @@ export default class Home extends Component {
             maxHeight: 100,
             height: "15vh"
           }}></div>
-          <FT title="Responsive" content="I make sure that every website I make looks nice and fits on all devices from miniature phones to massive computers." icon="/icons/responsive.svg" style={{ marginTop: 0 }} />
+          <FT title="Responsive" content="I make sure that every website I create looks nice and fits on all devices from miniature phones to massive computers." icon="/icons/responsive.svg" style={{ marginTop: 0 }} />
           <FT title="On-Time" content="You can call me lots of things, but you can't call me late. Time is priceless and I try my best to make use of every second. You can count on me to get your website done in a timely manner." icon="/icons/clock.svg" />
           <FT title="Sustainable Quality" content="Persistence, Equity, Skill, and Design are four elements I keep at my side when developing for others.  I will unleash my skills and ensure satisfaction." icon="/icons/quality.svg" />
           <FT title="Best Performance" content="I use some of the latest web development technologies to ensure that your site will run fast, perform well, and satisfy you and people viewing your website." icon="/icons/performance.svg" />

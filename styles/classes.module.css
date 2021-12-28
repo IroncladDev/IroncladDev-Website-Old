@@ -35,7 +35,7 @@
   padding: 12.5px 30px;
   border-radius: 75px;
   font-size: 17.5px;
-  background: var(--y-med);
+  background: var(--y-dim);
   color: var(--w-4);
   border: none;
   font-family: var(--font-text);
@@ -43,7 +43,7 @@
 }
 .button:hover {
   cursor: pointer;
-  background: var(--y-dim);
+  background: var(--y-dark);
 }
 .button:disabled {
   opacity: 0.5;
@@ -86,7 +86,7 @@
   transition: 0.25s;
 }
 .link:hover{
-  color: var(--y-dim);
+  color: var(--y-dim) !important;
 }
 .hov:hover {
   cursor: pointer;
@@ -137,7 +137,7 @@
   background: var(--w-5);
   font-family: var(--font-text);
   font-weight: 300;
-  transition: 0.25s;
+  transition: border 0.25s, box-shadow 0.25s;
 }
 .input:focus {
   border: solid rgb(0, 150, 200) 1px;

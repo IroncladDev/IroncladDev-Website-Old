@@ -5,6 +5,7 @@ import Nav from '../components/nav.js';
 import Li from '../components/li.js';
 import { Component } from 'react';
 import Footer from '../components/footer';
+import Link from 'next/link'
 
 export default class Waitlist extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class Waitlist extends Component {
       </Head>
       <h1 className={classes._header}>Waitlist</h1>
       <div className={styles.blockCont}>
-        {this.state.data.length > 0 ? this.state.data.map((l, ind) => <Li key={l._id} number={ind + 1} name={l._id} date={l.date} status={l.status} />) : <p className={classes.centerx} style={{fontStyle:"italic", textAlign: "center", color: 'var(--w-1)'}}>Nobody&apos;s on the waitlist right now.  Be the first!</p>}
+        {this.state.data.length > 0 ? this.state.data.map((l, ind) => <Li key={l._id} number={ind + 1} name={l._id} date={l.date} status={l.status} />) : <p className={classes.centerx} style={{fontStyle:"italic", textAlign: "center", color: 'var(--g-bright)'}}>Nobody&apos;s on the waitlist right now.  <Link href="/hire">Be the first</Link>!</p>}
       </div>
 
       <Footer />

@@ -21,20 +21,21 @@
   border-radius: 5px;
 }
 .title {
-  color: var(--g-med);
-  font-size: 25px;
+  color: var(--g-dim);
+  font-size: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 .desc {
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 27.5px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  word-break: break-all;
-  hyphens: manual;
+  word-break: break-word;
+  hyphens: auto;
+  color: var(--g-med);
 }
 .dateMarker{
   color: var(--w-1);

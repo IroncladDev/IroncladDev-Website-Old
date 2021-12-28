@@ -15,7 +15,7 @@ export default function Footer() {
       <p className={styles.textPar + " " + classes.centerx}>Stay updated with weekly digests, new articles, projects, and more!</p>
       <div className={styles.subForm + " " + classes.centerx}>
         <input className={classes.input} name="email" type="email" placeholder="Your Email Address" value={__email} onChange={(e) => setEmail(e.target.value)}/>
-        <button className={classes.darkBtn} onClick={() => {
+        <button className={classes.darkBtn + " " + styles.contr} onClick={() => {
           fetch("/api/subscribe", {
             method: "POST",
             headers: {
