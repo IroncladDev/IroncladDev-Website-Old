@@ -72,6 +72,9 @@ export default function Footer() {
           <div><Link href="/blog" passHref>
             <span className={styles.link}>Blog</span>
           </Link></div>
+          <div><Link href="/resume.pdf" passHref>
+            <span className={styles.link}>Resume</span>
+          </Link></div>
         </div>
       </div>
 
