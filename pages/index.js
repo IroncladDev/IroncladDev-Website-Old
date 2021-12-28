@@ -39,7 +39,7 @@ export default class Home extends Component {
               <p className={classes.displayDark + " " + styles.headDescription}>I build websites of all kinds from single-page websites to fully-functional ecommerce stores.</p>
             </div>
             <div className={styles.iwrap}>
-              <Svg/>
+              <Svg />
             </div>
           </div>
         </section>
@@ -69,12 +69,15 @@ export default class Home extends Component {
             <div className={styles.slant6 + " " + classes.overlayElement}></div>
             <div className={styles.slant7 + " " + classes.overlayElement}></div>
             <div className={styles.abtCover + " " + classes.overlayElement}>
-              <h1 className={classes._header + " " + classes.displayDark}>A Little Bit About Me</h1>
-              <p className={classes.displayDark + " " + classes.centerx}>Hello, my name is Conner.  I am a sixteen-year-old fullstack web developer.  What I enjoy most is building websites for people, competing, and solving algorithms in the field of Programming.</p>
-              <p className={classes.displayDark + " " + classes.centerx}>I&apos;ll be happy to make you a beautiful website for a low cost.  Need your site up and running?  You&apos;ve got the right guy to do it for you.</p>
-              <Link href="/about" passHref>
-                <h2 className={classes.link} style={{ textAlign: "center" }}>Read More &gt;&gt;</h2>
-              </Link>
+              <div className={classes.centerxy}>
+                <h1 className={classes._header + " " + classes.displayDark} style={{margin: 0, padding:0}}>A Little Bit About Me</h1>
+                <p className={classes.displayDark + " " + classes.centerx}>Hello, my name is Conner.  I am a sixteen-year-old fullstack web developer.  What I enjoy most is building websites for people, competing, and solving algorithms in the field of Programming.</p>
+                <p className={classes.displayDark + " " + classes.centerx}>I&apos;ll be happy to make you a beautiful website for a low cost.  Need your site up and running?  You&apos;ve got the right guy to do it for you.</p>
+                <Link href="/about" passHref>
+                  <h2 className={classes.link} style={{ textAlign: "center" }}>Read More &gt;&gt;</h2>
+                </Link>
+              </div>
+
             </div>
           </div>
         </section>
@@ -98,12 +101,14 @@ export default class Home extends Component {
             <div className={styles.slant8 + " " + classes.overlayElement}></div>
             <div className={styles.slant9 + " " + classes.overlayElement}></div>
             <div className={styles.abtCover + " " + classes.overlayElement}>
-              <h1 className={classes.displayDark + " " + classes._header}>Need a Website?</h1>
+              <div className={classes.centerxy}>
+              <h1 className={classes.displayDark + " " + classes._header} style={{padding:0}}>Need a Website?</h1>
               <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>I&apos;ll be more than happy to make you a site of any type at a reasonable price.</p>
               <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>What are you waiting for?  Click that button and get yours up and running!</p>
               <Link href="/hire" passHref>
                 <button className={classes.button + " " + classes.blockBtn}>Hire Me</button>
               </Link>
+              </div>
             </div>
           </div>
         </section>

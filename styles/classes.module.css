@@ -69,6 +69,11 @@
   left: 50%;
   transform: translatex(-50%);
 }
+.centery {
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+}
 .centerxy {
   position: relative;
   left: 50%;
@@ -116,16 +121,12 @@
   height: auto;
 }
 .formLabel {
-  font-family: var(--font-text);
-  font-weight: 300;
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 .formDesc {
-  font-family: var(--font-text);
   font-size: 16px;
-  font-weight: 300;
   margin-top: 10px;
   margin-bottom: 10px;
 }

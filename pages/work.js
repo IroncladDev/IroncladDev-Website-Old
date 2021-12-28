@@ -9,7 +9,7 @@ import { useState, Component } from 'react';
 
 
 export default class About extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       data: []
@@ -71,11 +71,13 @@ export default class About extends Component {
               <div className={styles.slant8 + " " + classes.overlayElement}></div>
               <div className={styles.slant9 + " " + classes.overlayElement}></div>
               <div className={styles.abtCover + " " + classes.overlayElement}>
-                <h1 className={classes.displayDark + " " + classes._header}>Your site is waiting to be built</h1>
-                <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>I&apos;m totally looking forward to creating your totally amazing website.  Are you ready?</p>
-                <Link href="/hire" passHref>
-                  <button className={classes.button + " " + classes.blockBtn}>Hire Me</button>
-                </Link>
+                <div className={classes.centerxy}>
+                  <h1 className={classes.displayDark + " " + classes._header} style={{padding: 0}}>Your site is waiting to be built</h1>
+                  <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>I&apos;m totally looking forward to creating your totally amazing website.  Are you ready?</p>
+                  <Link href="/hire" passHref>
+                    <button className={classes.button + " " + classes.blockBtn}>Hire Me</button>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
