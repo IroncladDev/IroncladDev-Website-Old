@@ -27,7 +27,8 @@ export function sendEmail(to, subject, message) {
     body: JSON.stringify({
       to,
       subject,
-      body: message
+      body: message,
+      auth: process.env.ADMSS
     }),
     headers: {
       "Content-Type": "application/json",
