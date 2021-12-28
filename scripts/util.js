@@ -21,9 +21,12 @@ export const limiter = (time, max, handler) => {
 };
 
 export const app = nextConnect();
-export async function sendEmail(to, subject, message) {
+export function sendEmail(to, subject, message) {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.GP
