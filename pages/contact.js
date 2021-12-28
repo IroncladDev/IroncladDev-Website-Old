@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div>
     <Head>
-      <title>Contact Me | IroncladDev</title>
+      <title>Contact Me | Ironclad Web Development</title>
     </Head>
       <div style={{ paddingTop: 50 }}>
         <section style={{minHeight: '100vh'}}>

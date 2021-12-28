@@ -220,7 +220,7 @@ export default class Hire extends Component {
     return (
       <div>
         <Head>
-          <title>Hire Me | IroncladDev</title>
+          <title>Hire Me | Ironclad Web Development</title>
         </Head>
 
         <section className={classes.overlayer} style={{ background: 'var(--gr-dim)' }}>

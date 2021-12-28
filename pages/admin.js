@@ -56,7 +56,7 @@ export default class ADM extends Component {
     return (
       <div className={styles.bodyCont}>
         <Head>
-          <title>Admin | IroncladDev</title>
+          <title>Administration | Ironclad Web Development</title>
         </Head>
         {this.props.auth ? <Admin {...this.props}/> : <div>
           <Script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></Script>

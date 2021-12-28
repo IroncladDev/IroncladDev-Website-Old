@@ -26,7 +26,7 @@ export default class About extends Component {
     return (
       <div>
         <Head>
-          <title>My Work | IroncladDev</title>
+          <title>My Work | Ironclad Web Development</title>
         </Head>
         <div>
           <section className={classes.overlayer} style={{ background: 'var(--b-dim)' }}>

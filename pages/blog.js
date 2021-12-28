@@ -14,7 +14,7 @@ export default class Blog extends Component {
     return (
       <div>
       <Head>
-        <title>Blog</title>
+        <title>Blog | Ironclad Web Development</title>
       </Head>
         <div className={classes.relcont} style={{paddingTop: '100px'}}>
           <h1 className={classes._header}>My Blog</h1>

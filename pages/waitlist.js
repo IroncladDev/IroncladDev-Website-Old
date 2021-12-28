@@ -32,7 +32,7 @@ export default class Waitlist extends Component {
   render() {
     return (<div className={styles.container} style={{background: 'var(--w-4)'}}>
       <Head>
-        <title>Waitlist | Ironcladdev</title>
+        <title>Waitlist | Ironclad Web Development</title>
       </Head>
       <h1 className={classes._header}>Waitlist</h1>
       <div className={styles.blockCont}>

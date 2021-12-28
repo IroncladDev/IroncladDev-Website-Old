@@ -27,7 +27,7 @@ export default class Home extends Component {
     return (
       <div>
         <Head>
-          <title>Home | IroncladDev</title>
+          <title>Home | Ironclad Web Development</title>
         </Head>
         <section className={styles.sec1}>
           <div className={styles.slant2}></div>
