@@ -24,7 +24,7 @@ export default function Contact() {
 
               <div>
                 <a href="https://replit.com/@IroncladDev" target="_blank" rel="noreferrer">
-                  <img src="https://www.connerow.dev/files/replit.svg" alt="Replit Logo" />
+                  <img src="https://digest.repl.co/favicon.ico" alt="Replit Logo" />
                 </a>
                 <span className={styles.ntag}>Replit</span>
               </div>
