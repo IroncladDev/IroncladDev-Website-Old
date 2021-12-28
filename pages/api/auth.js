@@ -11,7 +11,7 @@ app.post((req, res) => {
     if (user.login === process.env.ghName && user.id == process.env.ghId && user.email === process.env.ghEm) {
       res.status(200)
         .setHeader('Set-Cookie', serialize('admin', process.env.ADMSS, { path: '/', expires: new Date(Date.now() + (1000 * 60 * 30)), }))
-        .json({ success: true })//cytånéxør1115
+        .json({ success: true })
     } else {
       res.status(401).json({ success: false, message: "Unauthorized Login" });
     }
