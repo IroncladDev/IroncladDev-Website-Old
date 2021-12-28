@@ -24,7 +24,7 @@
   align-self: center;
   max-height: 800px;
   stroke-dasharray: 100%;
-	animation: draw 5s ease-in, float 10s ease-in-out infinite;
+	animation: draw 5s ease-in, float 7s ease-in-out infinite;
 	animation-fill-mode: forwards;
 	padding: 0;
 	stroke-width: 1;
