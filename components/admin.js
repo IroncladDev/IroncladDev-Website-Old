@@ -372,6 +372,7 @@ class Bloog extends Component {
           title: "Failed",
           text: data.error
         })
+        console.log(data.error)
       }
     })
   }
