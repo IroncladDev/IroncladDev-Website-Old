@@ -283,7 +283,7 @@ class ProjManage extends Component {
           </div>
 
           <div style={{ background: 'transparent' }}>
-            {this.state.data.map(x => <PRow _id={x._id} edit={this.editProj} key={x._id} title={x.title} desc={x.desc} postval={x.postval || "0"} />)}
+            {this.state.data.map(x => <PRow _id={x._id} edit={this.editProj} key={x._id} title={x.title} desc={x.desc} postval={""} />)}
           </div>
 
         </div>
@@ -306,17 +306,17 @@ class GenPay extends Component {
   encodeValue(v) {
     return btoa(v.toString().split``.map(e => e.charCodeAt(0)).join`-`)
   }
-  change(e){
+  change(e) {
     this.setState({
       value: Number(e.target.value)
     })
   }
-  switchType(e){
+  switchType(e) {
     this.setState({
       switch: e.target.value
     })
   }
-  copyVal(){
+  copyVal() {
     navigator.clipboard.writeText("https://payment.connerow.dev/" + this.state.switch + "?amtval=" + this.encodeValue(this.encodeValue(this.state.value)));
     Toast.fire({
       icon: "success",
@@ -327,7 +327,7 @@ class GenPay extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.payGen}>
-          <input className={classes.input} placeholder="Amount" type="number" value={this.state.value} onChange={this.change}/>
+          <input className={classes.input} placeholder="Amount" type="number" value={this.state.value} onChange={this.change} />
           <select className={classes.darkBtn} onChange={this.switchType} value={this.state.switch}>
             <option value="pre">Pre-Payment</option>
             <option value="final">Final Payment</option>
@@ -340,30 +340,57 @@ class GenPay extends Component {
 }
 
 class Bloog extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       data: this.props.data
     }
   }
-  addPost(){
-
+  postEm(e) {
+    e.preventDefault();
+    const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift();
+    fetch("/api/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        accept: "*/*"
+      },
+      body: JSON.stringify({
+        title: e.target.title.value,
+        body: e.target.body.value,
+        auth: cookie("admin")
+      })
+    }).then(r => r.json()).then(data => {
+      if (data.success) {
+        Toast.fire({
+          icon: "success",
+          title: "Success"
+        })
+      } else {
+        Toast.fire({
+          icon: "error",
+          title: "Failed",
+          body: data.error
+        })
+      }
+    })
   }
-  render(){
+  render() {
     return (
       <div className={styles.container}>
         <div className={styles.projCont}>
 
           <div className={styles.projAdd + " " + classes.centerx}>
-            <form onSubmit={this.addPost} className={styles.addForm}>
+            <form onSubmit={this.postEm} className={styles.addForm}>
               <h1 className={classes.textCenter}>Message Subscribers</h1>
-              <input className={classes.input} name="title" placeholder="Email Title"/>
-              <textarea className={classes.input} rows="6" placeholder="Body (HTML Supported)"></textarea>
+              <input className={classes.input} name="title" placeholder="Email Title" />
+              <textarea name="body" className={classes.input} rows="6" placeholder="Body (HTML Supported)"></textarea>
               <button className={classes.darkBtn} type="submit">Send</button>
             </form>
           </div>
 
-          
+          {this.props.data.map((x, i) => <PRow _id={x._id} edit={() => { }} key={x._id} title={i} desc={x.email} />)}
+
 
         </div>
       </div>
@@ -417,7 +444,7 @@ export default class Admin extends Component {
         {this.state.tab === 0 && <Waits data={JSON.parse(this.props.waits)} />}
         {this.state.tab === 1 && <ProjManage data={JSON.parse(this.props.sites)} />}
         {this.state.tab === 2 && <GenPay />}
-        {this.state.tab === 3 && <Bloog data={JSON.parse(this.props.subs)}/>}
+        {this.state.tab === 3 && <Bloog data={JSON.parse(this.props.subs)} />}
 
 
 

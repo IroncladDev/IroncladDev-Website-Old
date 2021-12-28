@@ -1,5 +1,5 @@
 import { Sub } from '../../scripts/mongo.js'
-import { app } from '../../scripts/util.js'
+import { app, sendEmail } from '../../scripts/util.js'
 import requestIp from 'request-ip'
 
 
