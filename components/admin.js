@@ -370,7 +370,7 @@ class Bloog extends Component {
         Toast.fire({
           icon: "error",
           title: "Failed",
-          body: data.error
+          text: data.error
         })
       }
     })
