@@ -1,5 +1,6 @@
 import { Site } from '../../scripts/mongo.js';
-import { app } from '../../scripts/util.js';
+import nextConnect from "next-connect";
+const app = nextConnect();
 
 app.get(async (req, res) => {
   let data = await Site.find({}).sort('-posval');

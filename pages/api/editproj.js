@@ -1,13 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import nextConnect from "next-connect";
 import { Site } from '../../scripts/mongo.js'
-import { app, limiter } from '../../scripts/util.js'
+import { limiter } from '../../scripts/util.js'
+import nextConnect from "next-connect";
+const app = nextConnect();
 import cloudinary from 'cloudinary';
 
 
 app.use(limiter(60 * 1000, 3));
 app.post(async (req, res) => {
-  if (req.method === "POST") {
     let body = req.body;
     if (body.auth === process.env.ADMSS) {
       let site = await Site.findOne({ _id: body.slug });
@@ -24,9 +24,6 @@ app.post(async (req, res) => {
     } else {
       res.status(401).json({ success: false, message: "Unauthorized" });
     }
-  } else {
-    res.status(403).json({ success: false, message: "Cannot GET /api/add-site" });
-  }
 })
 
 export default app;

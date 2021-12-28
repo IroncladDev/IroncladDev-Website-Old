@@ -1,10 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { Wait } from '../../scripts/mongo.js'
-import { app, limiter, sendEmail } from '../../scripts/util.js'
+import { sendEmail } from '../../scripts/util.js'
 import superagent from 'superagent'
 import requestIp from 'request-ip'
 import { serialize } from 'cookie';
-
+import nextConnect from "next-connect";
+const app = nextConnect();
 
 /*
   Request Body Fields:
@@ -19,7 +20,6 @@ import { serialize } from 'cookie';
 */
 
 app.post(async (req, res) => {
-  if (req.method === "POST") {
     if (await Wait.findOne({ addr: requestIp.getClientIp(req) })) {
       res.status(403).json({ success: false, message: "I appreciate it, but you are already on the waitlist.  Please try again later." })
     } else {
@@ -74,9 +74,6 @@ app.post(async (req, res) => {
         res.status(403).json({ success: false, message: "Invalid Captcha.  Please make sure you check it before you continue." })
       }
     }
-  } else {
-    res.status(403).json({ success: false, message: "Cannot GET /api/add-site" });
-  }
 })
 
 export default app;

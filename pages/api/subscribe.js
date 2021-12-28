@@ -1,6 +1,7 @@
 import { Sub } from '../../scripts/mongo.js'
-import { app, sendEmail } from '../../scripts/util.js'
 import requestIp from 'request-ip'
+import nextConnect from "next-connect";
+const app = nextConnect();
 
 
 app.post(async (req, res) => {

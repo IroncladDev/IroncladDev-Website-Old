@@ -1,4 +1,6 @@
-import { app, limiter } from '../../scripts/util.js';
+import { limiter } from '../../scripts/util.js';
+import nextConnect from "next-connect";
+const app = nextConnect();
 import { serialize } from 'cookie';
 
 app.use(limiter(1000 * 60 * 60, 3, (req, res) => {
