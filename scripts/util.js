@@ -22,26 +22,18 @@ export const limiter = (time, max, handler) => {
 
 export const app = nextConnect();
 export function sendEmail(to, subject, message) {
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.EMAIL,
-      pass: process.env.GP
+  fetch("https://payment.connerow.dev/api/email", {
+    method: "POST",
+    body: JSON.stringify({
+      to,
+      subject,
+      body: message
+    }),
+    headers: {
+      "Content-Type": "application/json",
+      accept: "*/*"
     }
-  });
-  transporter.use('compile', inLineCss());
-
-  let mailDetails = {
-    from: process.env.EMAIL,
-    to: to,
-    subject: subject,
-    html: message,
-  };
-
-  transporter.sendMail(mailDetails, function (err, data) {
-    if (err) console.error(err)
-  });
+  }).then(r => r.json()).then(data => {
+    console.log(data);
+  })
 }
