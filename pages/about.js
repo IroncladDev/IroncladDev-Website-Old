@@ -84,7 +84,7 @@ export default function About() {
           <Skill icon="https://replit.com/public/images/languages/nodejs.svg" text="NodeJS, my friends, is what I use to make your sites awesome.  Accounts & logins, user posting, administration dashbaords, you name it!" lang="NodeJS" />
           <Skill icon="https://github.com/Steffan153/Steffan153/raw/main/icons/git.svg" text="Git keeps track of all your code and is an amazing helper when it comes to getting websites online, sharing code, and quick bug patching." lang="Git" />
           <Skill icon="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" text="Whenever a post, account, or some other item gets saved globally to a database, that's when I use MongoDB." lang="MongoDB" />
-          <Skill icon="https://www.connerow.dev/files/p5.png" text="I use P5.js for making interactive and animated backgrounds and games." lang="P5.js" />
+          <Skill icon="/icons/p5.png" text="I use P5.js for making interactive and animated backgrounds and games." lang="P5.js" />
           <Skill icon="https://icons.util.repl.co/bash.svg" text="Bash does everything from running operations in your device to hosting websites online." lang="Bash" />
           <Skill icon="https://github.com/Steffan153/Steffan153/raw/main/icons/fontawesome.svg" text="Those cute little icons you see in websites all over the web use FontAwesome." lang="Font Awesome" />
           <Skill icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" text="Typescript works like Javascript but always makes sure to catch and fix all user errors and make sure everything is right.  It's useful, kind of like ... a mom." lang="Typescript" />
