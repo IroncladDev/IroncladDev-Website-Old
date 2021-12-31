@@ -12,10 +12,10 @@ export default function Contact() {
     <Head>
       <title>Contact Me | Ironclad Web Development</title>
     </Head>
-      <div style={{ paddingTop: 50 }}>
+      <div>
         <section style={{minHeight: '100vh'}}>
 
-        <div style={{position: 'absolute', top: '50%', width: '100%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+        <div style={{paddingTop: 100, paddingBottom: 100}}>
         <h1 className={classes._header}>Contact Me</h1>
           <p className={classes.centerx}>Email: <a href="mailto:connerow1115@gmail.com">connerow1115@gmail.com</a><br/>
           Phone Number: Nonexistent at the moment</p>
