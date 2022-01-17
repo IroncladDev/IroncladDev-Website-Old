@@ -57,7 +57,6 @@ const fts = [
   ["video background(s)", 5, 1],
 
   "miscalleneous",
-  ["administration dashboard", 75, 5],
   ["toggleable dark mode", 15, 2],
   ["\"I'm not a robot\" captchas", 10, 2],
   ["image uploading", 25, 2],
@@ -299,7 +298,7 @@ export default class Hire extends Component {
             <textarea name="additional" placeholder="Color palettes, additional features, etc." className={classes.input} rows="3" style={{ width: '100%' }}></textarea>
 
 
-            <div className={styles.count}>Estimated Price: ${this.state.price + this.state.pageCost}.  Approximate Time to finish: {this.calcTime(this.state.time)} days</div>
+            <div className={styles.count}>Estimated Price: ${((this.state.price + this.state.pageCost) * 1.029 + 0.3).toFixed(2)}.  Approximate Time to finish: {this.calcTime(this.state.time)} days</div>
             {this.state.showSubmitButton ? (
               <div tabIndex={0} autoFocus={true} style={{ border: 'solid var(--b-bright) 2px', borderRadius: 5, padding: 10, marginTop: 50 }}>
                 <div className={classes.formLabel} style={{ marginTop: 10 }}>Last Step!</div>
