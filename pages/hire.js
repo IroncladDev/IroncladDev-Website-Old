@@ -76,11 +76,11 @@ export default class Hire extends Component {
       time: 0,
       pages: [{
         title: "Homepage",
-        desc: "I would like the homepage to have a large title header that says \"Art from a new perspective\", have a section for some testimonials and have a small incomplete gallery followed by a footer."
+        desc: "[EXAMPlE, PLEASE EDIT/REMOVE] - I would like the homepage to have a large title header that says \"Art from a new perspective\", have a section for some testimonials and have a small incomplete gallery followed by a footer."
       },
       {
         title: "About Us",
-        desc: "The about us page should have a background image of a mountain range and have a large header that says \"About Us\" in a cursive-like font.  Below it should just be the text followed by a footer."
+        desc: "[EXAMPlE, PLEASE EDIT/REMOVE] - The about us page should have a background image of a mountain range and have a large header that says \"About Us\" in a cursive-like font.  Below it should just be the text followed by a footer."
       }],
       showSubmitButton: false,
       showTos: false,
