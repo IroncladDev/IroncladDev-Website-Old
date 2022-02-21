@@ -94,7 +94,7 @@ export default function Contact() {
 
 
               <div>
-                <a href="https://discord.gg/TZCc8P2cyH" target="_blank" rel="noreferrer">
+                <a href="https://discord.gg/kuGvdgn5SK" target="_blank" rel="noreferrer">
                   <img src="/icons/Discord-Logo-Color.svg" alt=" Logo" />
                 </a>
                 <span className={styles.ntag}>Discord</span>
