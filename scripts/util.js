@@ -21,20 +21,20 @@ export const limiter = (time, max, handler) => {
 };
 
 export const app = nextConnect();
-export function sendEmail(to, subject, message) {
-  fetch("https://payment.connerow.dev/api/email", {
+export async function sendEmail(to, subject, body) {
+  return await fetch("https://email.connerow.dev/send", {
     method: "POST",
-    body: JSON.stringify({
-      to,
-      subject,
-      body: message,
-      auth: process.env.ADMSS
-    }),
     headers: {
       "Content-Type": "application/json",
-      accept: "*/*"
-    }
-  }).then(r => r.json()).then(data => {
-    console.log(data);
-  })
+      "accept": "*/*"
+    },
+    body: JSON.stringify({
+      email: process.env.EMAIL,
+      password: process.env.GP,
+      auth: process.env.EMAIL_TOKEN,
+      to,
+      subject,
+      body
+    })
+  }).then(r => r.json());
 }
