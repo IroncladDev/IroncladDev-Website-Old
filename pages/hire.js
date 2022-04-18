@@ -25,19 +25,18 @@ const Toast = Swal.mixin({
 
 const fts = [
   "payments & ecommerce",
-  ["online payments", 50, 6],
-  ["0-5 sellable items (Free)", 0, 2],
-  ["5-10 sellable items", 25, 5],
-  ["unlimited sellable items (uploadeable)", 100, 8],
+  ["online payments (0-5 free items)", 150, 6],
+  ["5-10 sellable items", 50, 5],
+  ["10+ (variable) sellable items ($10 per item)", 10, 5],
+  ["unlimited sellable items (uploadeable)", 200, 8],
   "account systems and authentication",
-  ["account systems", 100, 10],
-  ["email verification", 25, 3],
+  ["account systems", 150, 10],
 
   "emailing and subscribing",
-  ["email subscribe form", 20, 2],
-  ["custom-style emails", 15, 3],
-  ["email sending (other purpose)", 30, 4],
-  ["contact form", 10, 1],
+  ["email subscribe form", 25, 2],
+  ["custom-style emails", 25, 3],
+  ["email sending (other purpose)", 25, 4],
+  ["contact form", 25, 1],
 
   "art & graphics",
   ["logo design", 5, 1],
@@ -54,17 +53,17 @@ const fts = [
 
   "animations",
   ["animated background(s)", 5, 2],
-  ["video background(s)", 5, 1],
+  ["video background(s)", 15, 1],
 
   "miscalleneous",
-  ["toggleable dark mode", 15, 2],
-  ["\"I'm not a robot\" captchas", 10, 2],
+  ["toggleable dark mode", 50, 2],
+  ["\"I'm not a robot\" captchas", 25, 2],
   ["image uploading", 25, 2],
-  ["realtime updates / multiplayer", 50, 5],
+  ["realtime updates / multiplayer", 100, 5],
   ["user posting/commenting abilities", 50, 4],
-  ["feed/hotlist functionality", 50, 4],
-  ["interval (cron) timers", 10, 1],
-  ["downloadable file(s)", 10, 1],
+  ["feed/hotlist functionality", 150, 4],
+  ["interval (cron) timers", 25, 1],
+  ["downloadable file(s)", 25, 1],
 ];
 
 export default class Hire extends Component {
