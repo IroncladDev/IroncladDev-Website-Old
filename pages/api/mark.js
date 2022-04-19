@@ -1,6 +1,6 @@
 import nextConnect from "next-connect";
 const app = nextConnect();
-import { Site, Wait } from '../../scripts/mongo.js'
+import { Wait } from '../../scripts/mongo.js'
 
 app.post(async (req, res) => {
   if (req.body.auth === process.env.ADMSS) {

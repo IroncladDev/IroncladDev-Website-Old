@@ -285,7 +285,7 @@ export default class Hire extends Component {
               {fts.map(tag => typeof tag === "string" ? <div key={tag} className={classes.formDesc}>{tag}</div> : <TagFT key={tag[0]} text={tag[0]} price={tag[1]} time={tag[2]} addTag={this.addTag} removeTag={this.removeTag} />)}
             </div>
 
-            <div className={classes.formLabel}>Website Pages ($10  each)</div>
+            <div className={classes.formLabel}>Website Pages ($10 each)</div>
             <div className={classes.formDesc}>Please try your best to describe each individual website page as best as you can.</div>
 
             <AddTable addPage={this.addPage} />
@@ -314,7 +314,6 @@ export default class Hire extends Component {
             </div>)}
           </form>
         </section>
-
 
         <BlockTos show={this.state.showTos} showSB={this.showSB} />
 
