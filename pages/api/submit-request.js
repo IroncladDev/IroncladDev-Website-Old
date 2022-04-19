@@ -1,19 +1,17 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { Wait } from '../../scripts/mongo.js'
 import { sendEmail } from '../../scripts/util.js'
+import superagent from 'superagent'
 import requestIp from 'request-ip'
 import { serialize } from 'cookie';
 import nextConnect from "next-connect";
-import { verify } from 'hcaptcha';
 const app = nextConnect();
 
 app.post(async (req, res) => {
     if (await Wait.findOne({ addr: requestIp.getClientIp(req) })) {
       res.status(403).json({ success: false, message: "I appreciate it, but you are already on the waitlist.  Please try again later." })
     } else {
-      let captcha = (await verify(process.env.HC_SECRET, req.body['h-captcha-response'])).success;
-      console.log("Captcha Status: ", captcha)
-      if (captcha) {
+      if (await superagent.get("https://hcaptcha.com/siteverify?response=" + req.body['h-captcha-response'] + "&secret=" + process.env.HC_SECRET)) {
         let body = req.body;
         try {
           let wait = new Wait({
