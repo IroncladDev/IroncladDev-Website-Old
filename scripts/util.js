@@ -1,8 +1,6 @@
 import rateLimit from 'express-rate-limit'
 import nextConnect from "next-connect";
 import requestIp from 'request-ip'
-import nodemailer from 'nodemailer';
-import inLineCss from 'nodemailer-juice';
 
 export const limiter = (time, max, handler) => {
   return rateLimit({
