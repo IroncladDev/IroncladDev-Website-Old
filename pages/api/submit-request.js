@@ -5,13 +5,16 @@ import superagent from 'superagent'
 import requestIp from 'request-ip'
 import { serialize } from 'cookie';
 import nextConnect from "next-connect";
+import { verify } from 'hcaptcha';
 const app = nextConnect();
 
 app.post(async (req, res) => {
     if (await Wait.findOne({ addr: requestIp.getClientIp(req) })) {
       res.status(403).json({ success: false, message: "I appreciate it, but you are already on the waitlist.  Please try again later." })
     } else {
-      if (await superagent.get("https://hcaptcha.com/siteverify?response=" + req.body['h-captcha-response'] + "&secret=" + process.env.HC_SECRET)) {
+      let captcha = (await verify(process.env.HC_SECRET, req.body['h-captcha-response'])).success;
+      console.log("Captcha Status: ", captcha)
+      if (captcha) {
         let body = req.body;
         try {
           let wait = new Wait({
@@ -30,7 +33,7 @@ app.post(async (req, res) => {
       The estimated cost for your website is ${body.cost} and <strong>might change</strong> in the end.<br><br>
 
       When I'm ready to start building your website, I'll send you an email containing the link to a payment form.<br>
-      You will pay 10% of the estimated cost of your website before I start building it.<br>
+      You will pay 25% of the estimated cost of your website before I start building it.  As for minors and clients under eighteen, the price should be paid in full before any development starts.<br>
       After you complete the payment, I will start building your site.
 
       Thanks,
