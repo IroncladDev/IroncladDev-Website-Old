@@ -75,11 +75,11 @@ export default class Hire extends Component {
       time: 0,
       pages: [{
         title: "Homepage",
-        desc: "[EXAMPlE, PLEASE EDIT/REMOVE] - I would like the homepage to have a large title header that says \"Art from a new perspective\", have a section for some testimonials and have a small incomplete gallery followed by a footer."
+        desc: "[EXAMPLE, PLEASE EDIT/REMOVE] - I would like the homepage to have a large title header that says \"Art from a new perspective\", have a section for some testimonials and have a small incomplete gallery followed by a footer."
       },
       {
         title: "About Us",
-        desc: "[EXAMPlE, PLEASE EDIT/REMOVE] - The about us page should have a background image of a mountain range and have a large header that says \"About Us\" in a cursive-like font.  Below it should just be the text followed by a footer."
+        desc: "[EXAMPLE, PLEASE EDIT/REMOVE] - The about us page should have a background image of a mountain range and have a large header that says \"About Us\" in a cursive-like font.  Below it should just be the text followed by a footer."
       }],
       showSubmitButton: false,
       showTos: false,
@@ -160,7 +160,7 @@ export default class Hire extends Component {
         } else {
           this.setState({
             pages: [...this.state.pages, { title, desc }],
-            pageCost: [...this.state.pages, { title, desc }].length * 5
+            pageCost: [...this.state.pages, { title, desc }].length * 10
           })
           Toast.fire({
             title: "Success!",
@@ -208,11 +208,11 @@ export default class Hire extends Component {
   removePage(page) {
     this.setState({
       pages: this.state.pages.filter(x => x.title !== page),
-      pageCost: this.state.pages.filter(x => x.title !== page).length * 5
+      pageCost: this.state.pages.filter(x => x.title !== page).length * 10
     })
   }
   calcTime(time) {
-    return Math.ceil(time * 3 / 24) + 1
+    return Math.ceil(time * 3 / 24) + 3
   }
   render() {
     return (
@@ -285,7 +285,7 @@ export default class Hire extends Component {
               {fts.map(tag => typeof tag === "string" ? <div key={tag} className={classes.formDesc}>{tag}</div> : <TagFT key={tag[0]} text={tag[0]} price={tag[1]} time={tag[2]} addTag={this.addTag} removeTag={this.removeTag} />)}
             </div>
 
-            <div className={classes.formLabel}>Website Pages ($5 each)</div>
+            <div className={classes.formLabel}>Website Pages ($10  each)</div>
             <div className={classes.formDesc}>Please try your best to describe each individual website page as best as you can.</div>
 
             <AddTable addPage={this.addPage} />

@@ -3,6 +3,7 @@ export const terms = [
   ["1. When the website is complete, paid in full, and approved by the client, the website will be put online.", 0.194],
   ["2. The estimated cost of your website is an approximation.  Please note that it may vary in the end.", 1.128],
   ["3. Any and All deposits you have made are not refundable.", 0.213],
+  ["4. Minors or clients under the age of eighteen, or clients that don't have a full-time job must pay beforehand.  In other words, don't pay for what you can't afford.", 0.413],
 
   "Web Hosting and Technical Support",
   ["1. Web hosting responsibilies will be provided by a third-party platform.", 1.3],
