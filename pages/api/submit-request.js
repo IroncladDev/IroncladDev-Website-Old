@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { Wait } from '../../scripts/mongo.js'
 import { sendEmail } from '../../scripts/util.js'
-import superagent from 'superagent'
 import requestIp from 'request-ip'
 import { serialize } from 'cookie';
 import nextConnect from "next-connect";
