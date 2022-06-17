@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Ironclad Web Development" />
       <meta property="og:description" content="Conner Ow (IroncladDev) is a Teen Fullstack web developer who has been coding for over five years.  He is currently trying to build up his portfolio and dig deeper into the world of freelancing." />
+      <meta name="description" content="Conner Ow (IroncladDev) is a Teen Fullstack web developer who has been coding for over five years.  He is currently trying to build up his portfolio and dig deeper into the world of freelancing." />
       <meta property="og:image" content="/homepage.png" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1280" />
