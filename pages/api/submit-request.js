@@ -8,7 +8,7 @@ import nextConnect from "next-connect";
 const app = nextConnect();
 
 app.post(async (req, res) => {
-    if (await Wait.findOne({ addr: requestIp.getClientIp(req) })) {
+    /*if (await Wait.findOne({ addr: requestIp.getClientIp(req) })) {
       res.status(403).json({ success: false, message: "I appreciate it, but you are already on the waitlist.  Please try again later." })
     } else {
       if (await superagent.get("https://hcaptcha.com/siteverify?response=" + req.body['h-captcha-response'] + "&secret=" + process.env.HC_SECRET)) {
@@ -61,7 +61,8 @@ app.post(async (req, res) => {
       } else {
         res.status(403).json({ success: false, message: "Invalid Captcha.  Please make sure you check it before you continue." })
       }
-    }
+    }*/
+    res.json({ success: false })
 })
 
 export default app;

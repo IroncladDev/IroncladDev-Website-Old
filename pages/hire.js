@@ -99,7 +99,7 @@ export default class Hire extends Component {
     })
   }
   submit(e) {
-    e.preventDefault();
+    /*e.preventDefault();
     let cost = e.target.price.value;
     let approxDays = Math.ceil(e.target.time.value * 3 / 24) + 1;
     let reqs = e.target.tags.value;
@@ -139,7 +139,7 @@ export default class Hire extends Component {
             }, 3000)
           } : () => { },
         });
-      })
+      })*/
   }
   showSB() {
     this.setState({
@@ -253,7 +253,10 @@ export default class Hire extends Component {
           }}></div>
         </section>
 
-        <section id="form">
+        <h1 className={classes._header}>Unavailable</h1>
+        <p className={classes.centerx}>Website freelancing and development has been taken down temporarily.</p>
+
+        {/*<section id="form">
           <h1 className={classes._header}>Create your site</h1>
           <p className={classes.centerx}>Please try your best to give me extremely detailed descriptions on what you want.  Are you ready?  Let&apos;s create your amazing website!</p>
 
@@ -315,7 +318,7 @@ export default class Hire extends Component {
           </form>
         </section>
 
-        <BlockTos show={this.state.showTos} showSB={this.showSB} />
+        <BlockTos show={this.state.showTos} showSB={this.showSB} />*/}
 
         <Footer />
 
