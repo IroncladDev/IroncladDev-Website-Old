@@ -3,6 +3,7 @@ import styles from '../styles/Hire.module.css'
 import classes from '../styles/classes.module.css'
 import Nav from '../components/nav.js';
 import { Component } from 'react';
+import Link from 'next/link'
 import TagFT from "../components/tagft";
 import Swal from 'sweetalert2';
 import AddTable from '../components/addtable';
@@ -241,20 +242,13 @@ export default class Hire extends Component {
           <div className={classes.overlayElement + " " + styles.abtCover}>
             <div className={styles.centerHead}>
               <h1 className={classes._header + " " + classes.displayDark}>Hire Me</h1>
-              <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>Create a website plan in a few simple steps, tell me what you want, and I&apos;ll get building as soon as possible.</p>
-              <a href="#form">
-                <button className={classes.button + " " + classes.centerx}>Get Started</button>
-              </a>
+              <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>I now have a full-time job, so I no longer am able to build freelance websites.</p>
+              <Link href="/" passHref>
+                <button className={classes.button + " " + classes.centerx}>Return Home</button>
+              </Link>
             </div>
           </div>
-          <div className={classes.slant + " " + classes.overlayElement} style={{
-            clipPath: `polygon(0 100%, 0 75%, 100% 100%)`,
-            background: "var(--w-5)",
-          }}></div>
         </section>
-
-        <h1 className={classes._header}>Unavailable</h1>
-        <p className={classes.centerx}>Website freelancing and development has been taken down temporarily.</p>
 
         {/*<section id="form">
           <h1 className={classes._header}>Create your site</h1>

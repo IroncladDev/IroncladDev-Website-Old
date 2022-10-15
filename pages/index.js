@@ -35,8 +35,8 @@ export default class Home extends Component {
           <div className={styles.slant3}></div>
           <div className={styles.header}>
             <div className={styles.headBlock}>
-              <h1 className={styles.title}>I&apos;m{" "}<span style={{ color: "var(--y-med)" }}>The Guy</span>{" "}to<br />Build Your Site</h1>
-              <p className={classes.displayDark + " " + styles.headDescription}>I build websites of all kinds from single-page websites to fully-functional ecommerce stores.</p>
+              <h1 className={styles.title}><span style={{ color: "var(--y-med)" }}>Redneck</span>{" "}Fullstack<br />Web Developer</h1>
+              <p className={classes.displayDark + " " + styles.headDescription}>I am a fullstack website developer that lives out in the country.  I do support engineering at <a href="https://replit.com" target="_blank" rel="noreferrer" style={{ color: 'white' }}>Replit</a> and build increasingly powerful tools to stop hackers and spammers.</p>
             </div>
             <div className={styles.iwrap}>
               <Svg />
@@ -50,39 +50,31 @@ export default class Home extends Component {
             maxHeight: 100,
             height: "15vh"
           }}></div>
-          <FT title="Responsive" content="I make sure that every website I create looks nice and fits on all devices from miniature phones to massive computers." icon="/icons/responsive.svg" style={{ marginTop: 0 }} />
-          <FT title="On-Time" content="You can call me lots of things, but you can't call me late. Time is priceless and I try my best to make use of every second. You can count on me to get your website done in a timely manner." icon="/icons/clock.svg" />
-          <FT title="Sustainable Quality" content="Persistence, Equity, Skill, and Design are four elements I keep at my side when developing for others.  I will unleash my skills and ensure satisfaction." icon="/icons/quality.svg" />
-          <FT title="Best Performance" content="I use some of the latest web development technologies to ensure that your site will run fast, perform well, and satisfy you and people viewing your website." icon="/icons/performance.svg" />
-          <FT title="Customization" content="I'll make sure your website comes out in the right style!  Tell me what you want and I'll try my best to implement it.  I'll make sure your site is worthy to be on the internet." icon="/icons/design.svg" />
-        </section>
-        <section style={{ background: "var(--gr-dim)" }} id="about">
-          <div className={classes.blockSlant} style={{
-            clipPath: `polygon(0 0, 0% 100%, 100% 0)`,
-            background: "var(--w-5)",
-            maxHeight: 100,
-            height: "15vh",
-            transform: 'translatey(-1px)'
-          }}></div>
-          <div className={classes.overlayer}>
-            <div className={styles.slant4 + " " + classes.overlayElement}></div>
-            <div className={styles.slant6 + " " + classes.overlayElement}></div>
-            <div className={styles.slant7 + " " + classes.overlayElement}></div>
-            <div className={styles.abtCover + " " + classes.overlayElement}>
-              <div className={classes.centerxy}>
-                <h1 className={classes._header + " " + classes.displayDark} style={{margin: 0, padding:0}}>A Little Bit About Me</h1>
-                <p className={classes.displayDark + " " + classes.centerx}>Hello, my name is Conner.  I am a sixteen-year-old fullstack web developer.  What I enjoy most is building websites for people, competing, and solving algorithms in the field of Programming.</p>
-                <p className={classes.displayDark + " " + classes.centerx}>I&apos;ll be happy to make you a beautiful website for a low cost.  Need your site up and running?  You&apos;ve got the right guy to do it for you.</p>
-                <Link href="/about" passHref>
-                  <h2 className={classes.link} style={{ textAlign: "center" }}>Read More &gt;&gt;</h2>
-                </Link>
-              </div>
 
-            </div>
+          <div>
+            <h1 className={classes._header} style={{ margin: 0, padding: 0 }}>A Little Bit About Me</h1>
+            <p className={classes.centerx}>Hello, my name is Conner.  I am a sixteen-year-old fullstack web developer.  What I enjoy most is building websites , competing, and solving algorithms in the field of Programming.</p>
+            <p className={classes.centerx}>I now work at <a href="https://replit.com" target="_blank" rel="noreferrer" >Replit</a> as somewhat a hybrid between a Support Engineer, a Product Engineer, and a Trust and Safety engineer.  I love building new stuff and watching how people use and utilize them.</p>
+            <Link href="/about" passHref>
+              <h2 className={classes.link} style={{ textAlign: "center" }}>Read More &gt;&gt;</h2>
+            </Link>
           </div>
+
         </section>
         <section style={{ paddingBottom: '75px' }}>
-          <h1 className={classes._header}>My Work</h1>
+          <div className={classes.blockSlant} style={{
+            clipPath: `polygon(0 0, 0 100%, 100% 100%)`,
+            background: "var(--b-dim)",
+            maxHeight: 100,
+            height: "15vh"
+          }}></div>
+          <div className={classes.blockSlant} style={{
+            clipPath: `polygon(0 0, 100% 0, 100% 100%)`,
+            background: "var(--b-med)",
+            maxHeight: 100,
+            height: "15vh"
+          }}></div>
+          <h1 className={classes._header}>Projects</h1>
           {this.state.data.slice(0, 3).map(x => <Project title={x.title} key={x._id} desc={x.desc} link={x.link} image={x.cover} />)}
 
           <Link href="/work" className={classes.link} passHref>
@@ -97,20 +89,6 @@ export default class Home extends Component {
             height: "15vh",
             transform: 'translatey(-1px)'
           }}></div>
-          <div className={classes.overlayer}>
-            <div className={styles.slant8 + " " + classes.overlayElement}></div>
-            <div className={styles.slant9 + " " + classes.overlayElement}></div>
-            <div className={styles.abtCover + " " + classes.overlayElement}>
-              <div className={classes.centerxy}>
-              <h1 className={classes.displayDark + " " + classes._header} style={{padding:0}}>Need a Website?</h1>
-              <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>I&apos;ll be more than happy to make you a site of any type at a reasonable price.</p>
-              <p className={classes.displayDark + " " + classes.textCenter + " " + classes.centerx}>What are you waiting for?  Click that button and get yours up and running!</p>
-              <Link href="/hire" passHref>
-                <button className={classes.button + " " + classes.blockBtn}>Hire Me</button>
-              </Link>
-              </div>
-            </div>
-          </div>
         </section>
         <Footer />
         <Nav />
